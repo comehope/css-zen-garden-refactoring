@@ -1,0 +1,174 @@
+body { 
+	font-family: georgia, sans-serif;
+	font-size: 0.75em;
+	color: #555753; 
+	background: #fff url(blossoms.jpg) no-repeat bottom right; 
+	margin: 0; 
+}
+
+h3 {
+	font-size: 1.4em;
+	font-style: italic;
+	font-weight: normal;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: #7D775C;
+}
+
+p {
+	line-height: 1.9em;
+	margin-top: 0; 
+	text-align: justify;
+}
+
+a {
+	font-weight: bold;
+}
+
+a:link { 
+	text-decoration: none; 
+	color: #B7A5DF;
+}
+
+a:visited { 
+	text-decoration: none; 
+	color: #D4CDDC;
+}
+
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #9685BA;
+}
+
+.page-wrapper { 
+	background: url(zen-bg.jpg) no-repeat; 
+	padding-left: 110px;
+	padding-right: 175px;
+}
+
+.page-wrapper::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url(cr2.gif);
+	width: 148px;
+	height: 110px;
+	margin-top: 40px;
+}
+
+.intro {
+	min-width: 470px;
+}
+
+.intro header h1,
+.intro header h2 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 0;
+}
+
+.intro header h1 { 
+	position: relative;
+	top: 30px;
+	background: url(h1.gif) no-repeat;
+	height: 87px;
+}
+
+.intro header h2 { 
+	float: right;
+	background: url(h2.gif);
+	width: 200px; 
+	height: 18px; 
+}
+
+.intro .summary {
+	clear: both; 
+	float: left;
+	width: 160px; 
+	margin-top: 30px;
+	padding: 15px;
+}
+
+.intro .summary p {
+	font-size: 1.1em;
+	line-height: 2.2em;
+	font-style: italic;
+	text-align: center;
+}
+
+.intro .preamble {
+	clear: right;
+	margin-top: 50px;
+}
+
+.supporting {
+	margin-left: 10px; 
+	margin-bottom: 40px;
+}
+
+.supporting footer { 
+	text-align: center; 
+}
+
+.supporting footer a { 
+	margin-right: 20px; 
+}
+
+.sidebar { 
+	position: absolute; 
+	top: 150px;
+	right: 0;
+	background: url(paper-bg.jpg);
+	width: 130px; 
+	padding: 10px; 
+	font-family: verdana, sans-serif;
+	font-size: 0.83em;
+}
+
+.sidebar .wrapper>div {
+	margin-top: 20px;
+}
+
+.sidebar h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 0;
+}
+
+.sidebar .design-selection h3 { 
+	background: url(h3.gif) no-repeat; 
+	height: 16px; 
+}
+
+.sidebar .design-archives h3 { 
+	background: url(h5.gif) no-repeat; 
+	height: 14px; 
+}
+
+.sidebar .zen-resources h3 { 
+	background: url(h6.gif) no-repeat; 
+	height: 10px; 
+}
+
+.sidebar ul {
+	padding: 0;
+}
+
+.sidebar li {
+	line-height: 1.3em; 
+	background: url(cr1.gif) no-repeat; 
+	padding-top: 5px; 
+	padding-bottom: 5px;
+	list-style-type: none;
+}
+
+.sidebar li a:link {
+	color: #988F5E;
+}
+
+.sidebar li a:visited {
+	color: #B3AE94;
+}

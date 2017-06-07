@@ -1,0 +1,246 @@
+body { 
+	color: #555753; 
+	background: #F5F7EC url(bg.jpg) repeat-x; 
+	margin: 0; 
+}
+
+p { 
+	font: 8pt/14pt verdana; 
+}
+
+.page-wrapper { 
+	position: relative;
+	top: 72px;
+	width: 647px;
+	background: url(whitebg2.gif) repeat-y #fff;	
+	margin: 0 auto;
+}
+
+.page-wrapper::after {
+	content: "";
+	position: absolute;
+	top: 92px;
+	left: 647px;
+	background: url(flwr.gif);
+	width: 84px;
+	height: 261px;
+}
+
+.intro header h1,
+.intro header h2,
+.intro .preamble h3 {
+	text-indent: 110%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.intro header h1 { 
+	position: relative;
+	top: -72px;
+	background: url(head.gif);
+	width: 178px; 
+	height: 213px; 
+	margin: 0;
+}
+
+.intro .summary {
+	position: absolute;
+	top: 141px;
+	background: url(green.gif); 
+	width: 178px;
+	height: 211px;
+}
+
+.intro .summary p {
+	font: 8pt/12pt verdana;
+	color: #EFF2E5;
+	margin: 15px;
+}
+
+.intro .summary a {
+	font-weight: bold;
+	color: #EFF2E5;
+	text-decoration: underline;
+}
+
+.intro .summary a:hover {
+	text-decoration:none;
+}
+
+.intro .preamble {
+	position: absolute;
+	top: 0;
+	left: 177px;
+	background: url(whitebg.gif); 
+	width: 470px;
+	height: 354px;
+}
+
+.intro .preamble h3 {
+	background: url(pretext.gif);
+	width: 408px;
+	height: 30px;
+	margin-left: 30px;
+}
+
+.intro .preamble p {
+	width: 400px;
+	margin-left: 30px;
+}
+
+.supporting {
+	position: relative;
+	left: 205px;
+	width: 410px;
+	margin-top: 120px;
+}
+
+.supporting h3 {
+	text-indent: 110%;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 410px;
+	height: 33px;
+	margin-bottom: 20px;
+}
+
+.supporting .explanation h3 {
+	background: url(whatistext.gif);
+}
+
+.supporting .participation h3 {
+	background: url(parttext.gif);
+}
+
+.supporting .benefits h3 {
+	background: url(beneftxt.gif);
+}
+
+.supporting .requirements h3 {
+	background: url(reqtext.gif);
+}
+
+.supporting .explanation,
+.supporting .participation,
+.supporting .benefits,
+.supporting .requirements
+ {
+	padding-bottom: 30px;
+}
+
+.supporting a {
+	font-size: 11px;
+	font-family: verdana; 
+	font-weight: bold; 
+	text-decoration: underline; 
+}
+
+.supporting a:link { 
+	color: #8F9E28;
+}
+
+.supporting a:visited { 
+	color: #C0C0C0;
+}
+
+.supporting a:hover,
+.supporting a:active { 
+	color: #B8C271;
+}
+
+.supporting footer {
+	position: relative;
+	width: 580px;
+	margin-left: -180px;
+	font: 8pt/16pt georgia; 
+	background: url(notext.gif) no-repeat; 
+	text-align: center; 
+	padding-top: 30px;
+}
+
+.supporting footer a { 
+	margin-left: 20px; 
+}
+
+.sidebar {
+	background: url(greenbg.gif) repeat-y top right; 
+	position: absolute;
+	top: 352px;
+	left: 1px;
+	width: 177px;
+}
+
+.sidebar .wrapper { 
+	background: url(fade.gif) no-repeat bottom left; 
+	font-size: 10px;
+	font-family: verdana, sans-serif; 
+	padding-bottom:100px;
+	width: 178px;
+	float: right;
+}
+
+.sidebar ul{
+	margin: 0;
+	margin-top: 10px;
+	padding: 0;
+}
+
+.sidebar li {
+	list-style-type: none;
+	background: #C1C99A;
+	width: 160px;
+	padding: 8px;
+	margin-bottom: 1px;
+}
+
+.sidebar li:hover {
+	background: #A6AE72;
+}
+
+.sidebar a {
+	font-weight: bold;
+	font-size: 11px;
+	font-family: verdana;
+	color: #6E7746;
+	text-decoration:underline;
+}
+
+.sidebar a:hover { 
+	color: #8F9E28;
+}
+
+.sidebar .design-selection h3,
+.sidebar .design-archives h3,
+.sidebar .zen-resources h3 {
+	text-indent: 110%;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 176px;
+	height: 31px;
+	margin: 0;
+}
+
+.sidebar .design-selection h3 {
+	background: url(seltxt.gif);
+}
+
+.sidebar .design-archives h3 {
+	background: url(archtxt.gif);
+}
+
+.sidebar .zen-resources h3 {
+	background: url(restxt.gif); 
+}
+
+.sidebar .design-selection .design-name {
+	display: block;
+}
+
+.sidebar .design-selection a.designer-name { 
+	color: #fff;
+	font-weight: normal;
+}
+
+.sidebar .design-selection a.designer-name:hover { 
+	color: #6E7746;
+}

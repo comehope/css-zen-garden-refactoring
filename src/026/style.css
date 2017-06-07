@@ -1,0 +1,170 @@
+body {
+	font-family: arial, helvetica, verdana, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	margin: 0;
+	background: url(bg_left.gif) repeat-y #fff;
+	color: #555;
+}
+
+a {
+	color: #655;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #e60;
+}
+
+.intro {
+	width: 303px;
+}
+
+.intro header h1,
+.intro header h2,
+.intro .preamble h3 {
+	text-indent: 110%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 0;
+	width: 303px;
+}
+
+.intro header h1 {
+	background: url(h1.jpg);
+	height: 198px;
+}
+
+.intro header h2 {
+	background: url(h2.gif);
+	height: 37px;
+}
+
+.intro .preamble h3 {
+	background: url(the_road.jpg);
+	height: 36px;
+}
+
+.intro p {
+	margin-left: 18px;
+	margin-right: 30px;
+}
+
+.intro .summary p:first-child {
+	font-weight: bold;
+	color: #777;
+}
+
+.supporting {
+	position: absolute;
+	top: 70px;
+	left: 303px;
+	width: 320px;
+	background: url(support_bg.gif) repeat-y top right;
+}
+
+.supporting p {
+	margin-right: 40px;
+}
+
+.supporting h3 {
+	text-indent: 110%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 0;
+}
+
+.supporting .explanation {
+	background: url(so_what_bg.gif) no-repeat top right;
+}
+
+.supporting .explanation h3 {
+	background: url(so_what.jpg);
+	width: 306px;
+	height: 36px;
+}
+
+.supporting .participation h3,
+.supporting .benefits h3,
+.supporting .requirements h3 {
+	height: 36px;
+	border-bottom: 1px solid #ccc;
+	margin-right: 40px;
+}
+
+.supporting .participation h3 {
+	background: url(parti.gif) no-repeat;
+}
+
+.supporting .benefits h3 {
+	background: url(bene.gif) no-repeat;
+}
+
+.supporting .requirements h3 {
+	background: url(req.gif) no-repeat;
+}
+
+.supporting .requirements p:nth-child(6) {
+	border-top: 1px solid #ccc;
+	padding-top: 10px;
+}
+
+.supporting footer {
+	background: url(foot.jpg) no-repeat;
+	width: 295px;
+	height: 26px;
+	padding-left: 25px;
+	padding-top: 5px;
+	margin-left: -14px;
+}
+
+.supporting footer a {
+	color: #fff;
+}
+
+.supporting footer a:hover {
+	color: #555;
+}
+
+.sidebar {
+	position: absolute;
+	left: 608px;
+	top: 130px;
+	width: 200px;
+}
+
+.sidebar h3 {
+	text-indent: 110%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 0;
+	width: 200px;
+	height: 26px;
+}
+
+.sidebar .design-selection h3 {
+	background: url(select.jpg);
+}
+
+.sidebar .design-archives h3 {
+	background: url(archives.jpg);
+}
+
+.sidebar .zen-resources h3 {
+	background: url(resources.jpg);
+}
+
+.sidebar ul {
+	padding-left: 20px;
+}
+
+.sidebar li {
+	list-style-type: none;
+	margin-top: 5px;
+}
+
+.sidebar .design-selection .design-name {
+	display: block;
+	text-decoration: underline;
+}
