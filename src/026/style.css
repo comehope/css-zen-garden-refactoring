@@ -105,7 +105,7 @@ a:hover {
 	background: url(req.gif) no-repeat;
 }
 
-.supporting .requirements p:nth-child(6) {
+.supporting .requirements p:last-child {
 	border-top: 1px solid #ccc;
 	padding-top: 10px;
 }
