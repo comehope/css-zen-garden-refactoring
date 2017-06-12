@@ -39,10 +39,10 @@ a:hover {
 	text-decoration: underline;
 }
 
-.intro {
+.page-wrapper>* {
 	position: absolute;
 	width: 1828px;
-	padding-left: 220px;
+	padding-left: 220px;	
 }
 
 .intro header h1,
@@ -103,12 +103,6 @@ a:hover {
 
 .intro .preamble p {
 	margin: 5px;
-}
-
-.supporting {
-	position: absolute;
-	width: 1828px;
-	padding-left: 220px;
 }
 
 .supporting h3 {
@@ -182,12 +176,6 @@ a:hover {
 
 .supporting footer a {
 	color: #B2AFC0;
-}
-
-.sidebar {
-	position: absolute;
-	width: 1828px;
-	padding-left: 220px;
 }
 
 .sidebar .wrapper {
