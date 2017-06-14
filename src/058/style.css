@@ -1,0 +1,284 @@
+body {
+	width: 1600px;
+	font-family: georgia, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	background: url(schaal.jpg) fixed no-repeat top center;
+	background-color: #F8F8EE; 
+	margin: 0px;
+}
+
+body::before {
+	content: "";
+	position: absolute;
+	width: 1600px;
+	height: 400px;
+	top: 83px;
+	text-align: justify;
+	background: url(bgrnd.gif) no-repeat;
+}
+
+body::after {
+	content: "";
+	position: absolute;
+	width: 321px;
+	height: 194px;
+	left: 160px;
+	top: 330px;
+	text-align: justify;
+	background: url(radio.jpg) no-repeat;
+}
+
+ul {
+	margin: 0;
+}
+
+li {
+	list-style-type: none;
+	float: left;
+}
+
+a { 
+	color: #744646; 
+	text-decoration: none;
+	border-bottom: 1px dashed #744646;
+}
+
+a:hover { 
+	color: #000000; 
+	text-decoration: underline;
+}
+
+.page-wrapper>* {
+	z-index: 1;
+}
+
+.intro {
+	position: absolute;
+	width: 1600px;
+	font-style: italic; 
+	text-transform: capitalize;
+}
+
+.intro header h1,
+.intro header h2,
+.intro .preamble h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 0;
+}
+
+.intro header h1 {
+	position: absolute;
+	top: 285px;
+	left: 720px;
+	width: 600px; 
+	height: 180px; 
+	background: url(zen.gif) no-repeat; 
+}
+
+.intro header h2 {
+	position: absolute;
+	top: 330px;
+	right: 0;
+	width: 321px;
+	height: 194px;
+	background: url(tune.jpg) no-repeat; 
+	margin-right: -10px;
+}
+
+.intro .summary {
+	position: absolute;
+	top: 130px;
+	right: 20px;
+	width: 142px;
+	color: #555F44;
+}
+
+.intro .preamble {
+	position: absolute;
+	top: 95px;
+	left: 20px;
+	text-align: right; 
+	width: 145px;
+}
+
+.intro .preamble p {
+	margin-top: 3px;
+	color: #555F44;
+}
+
+.intro .preamble h3 {
+	width: 140px; 
+	height: 32px; 
+	background: url(road.gif) no-repeat top right; 
+	margin-top: 10px;
+}
+
+.supporting	{
+	position: absolute;
+	left: 185px;
+	width: 1250px;
+	padding-top: 95px;
+	text-align: justify;
+	background: url(naald.gif) no-repeat 705px 0;
+}
+
+.supporting>div {
+	float: left;
+}
+
+.supporting p {
+	margin-top: 3px;
+	margin-bottom: 8px;
+	margin-left: 8px;
+	margin-right: 8px;
+	color: #353638;
+}
+
+.supporting h3	{
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-left: 3px;
+	margin-right: 8px;
+	margin-top: 10px; 
+	margin-bottom: 0;
+}
+
+.supporting .explanation h3 { 
+	background: url(sowhat.gif) no-repeat; 
+	width: 250px; 
+	height: 32px; 
+}
+
+.supporting .participation h3 { 
+	background: url(part.gif) no-repeat; 
+	width: 250px; 
+	height: 32px; 
+}
+
+.supporting .benefits h3 {
+	background: url(ben.gif) no-repeat; 
+	width: 120px; 
+	height: 32px; 
+}
+
+.supporting .requirements h3 { 
+	background: url(rec.gif) no-repeat; 
+	width: 470px; 
+	height: 32px; 
+}
+
+.supporting	.explanation {
+	width: 290px;
+}
+
+.supporting	.participation {
+	width: 290px;
+}
+
+.supporting	.benefits {
+	width: 150px;
+}
+
+.supporting	.requirements {
+	width: 500px;
+}
+
+.supporting	footer {
+	position: absolute;
+	top: 365px;
+	right: 70px;
+}
+
+.supporting	footer a { 
+	font-size: 1.2em; 
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.supporting	footer a:hover { 
+	color: #000000; 
+	text-decoration: underline;
+}
+
+.sidebar {
+	position: absolute;
+	width: 1600px;
+	top: 460px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar h3 {
+	margin: 0px;
+	margin-right: 10px;
+	float: left;
+}
+
+.sidebar a {
+	border-bottom: none;
+}
+
+.sidebar .design-selection {
+	position: absolute;
+	width: 1600px;
+	padding: 5px;
+	background-color: #E8E9CF;
+}
+
+.sidebar .design-selection h3 {
+	color: #555F44;
+	font-size: 1.05em;
+}
+
+.sidebar .design-selection li {
+	border-left: 4px solid #F8F8EE;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 1.05em;
+}
+
+.sidebar .design-selection a.design-name { 
+	color: #744646;
+	font-weight: bold;
+}
+
+.sidebar .design-selection a.designer-name {
+	color: #422222;
+}
+
+.sidebar .design-archives,
+.sidebar .zen-resources {
+	position: absolute;
+	top: 35px;
+	font-size: 0.9em;
+}
+
+.sidebar .design-archives {
+	left: 80px;
+	width: 300px;
+}
+
+.sidebar .zen-resources {
+	left: 405px;
+	width: 800px;
+}
+
+.sidebar .design-archives h3,
+.sidebar .zen-resources h3 {
+	color: #555F44;
+	font-weight: normal;
+}
+
+.sidebar .design-archives li,
+.sidebar .zen-resources li {
+	color: #555F44;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.sidebar .design-archives a,
+.sidebar .zen-resources a { 
+	color: #555F44; 
+}
