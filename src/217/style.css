@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
 	margin: 0;
 	box-sizing: border-box;
 }
@@ -9,11 +11,6 @@ body {
 	font-family: "tablet-gothic", verdana, arial, sans-serif;
 	font-size: 0.85em;
 	padding: 5%;
-}
-
-h2,
-h3 {
-	font-family: "tablet-gothic-condensed", "arial narrow", arial, verdana, sans-serif;
 }
 
 h1 {
@@ -30,18 +27,22 @@ h1 {
 	padding-bottom: 0.5em;
 }
 
+h2,
+h3 {
+	font-family: "tablet-gothic-condensed", "arial narrow", arial, verdana, sans-serif;
+	line-height: 1em;
+}
+
 h2 {
 	color: #fff;
 	font-size: 6em;
 	letter-spacing: 0.01em;
-	line-height: 1em;
 }
 
 h3 {
 	font-size: 2.25em;
 	font-weight: normal;
 	letter-spacing: 0.03em;
-	line-height: 1em;
 	padding-top: 0.5em;
 	padding-bottom: 0.25em;
 }
@@ -101,7 +102,8 @@ a:hover {
 	background: rgba(255,255,255,0.9);
 	color: #333;
 	margin-left: -30%;
-	padding: 5% 5% 5% 30%;
+	padding: 5%;
+	padding-left: 30%;
 }
 
 .supporting,
@@ -109,13 +111,13 @@ a:hover {
 	padding: 5%;
 }
 
-.supporting .explanation {
+.supporting .explanation,
+.supporting .participation {
 	color: #fff;
 }
 
 .supporting .participation {
 	background:rgba(234,46,73,0.9);
-	color: #fff;
 }
 
 .supporting .participation a {
@@ -126,13 +128,13 @@ a:hover {
 	border-color: #fff;
 }
 
-.supporting .benefits {
-	background: rgba(255,255,255,0.9);
-	margin-top: 10%;
-}
-
+.supporting .benefits,
 .supporting .requirements {
 	background: rgba(255,255,255,0.9);
+}
+
+.supporting .benefits {
+	margin-top: 10%;
 }
 
 .supporting .requirements p:last-child {
@@ -177,12 +179,12 @@ a:hover {
 @media screen and (min-width:550px) {
 	body::after {
 		content: "";
-		background: rgba(51,55,69,0.9);
 		position: fixed;
 		top: 0;
 		right: 0;
 		width: 30%;
 		height: 100%;
+		background: rgba(51,55,69,0.9);
 	}
 
 	h2 {
@@ -195,7 +197,7 @@ a:hover {
 
 	.supporting,
 	.sidebar {
-		z-index: 2;
+		z-index: 1;
 	}
 
 	.supporting {
