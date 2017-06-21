@@ -1,0 +1,250 @@
+body {
+	background: #444;
+	margin: 0px;
+  	font-family: Georgia, Serif;
+  	font-size: 13px;
+	color: #7f7f7f;
+}
+
+h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+  	margin: 0px;
+}
+
+p {
+	margin: 0px;
+	text-indent: 2em;
+	text-align: justify;
+}
+
+p:first-letter {
+	font-size: 180%;
+	font-weight: bold;
+	color: #444;
+}
+
+a {
+	text-decoration: underline;
+	color: #706F6A;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #555;
+}
+
+.page-wrapper {
+	position: relative;
+	background: #5d5d5d;
+	margin: 0px auto;
+	width: 760px;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+
+.intro header {
+	background: url(header_bg.jpg) no-repeat;
+	height: 400px;
+}
+
+.intro header h1,
+.intro header h2,
+.intro .summary p:first-child {
+	display: none;
+}
+
+.intro .summary p:last-child {
+	position: absolute;
+	top: 0px;
+	left: 2px;
+	text-indent: 0;
+	font-size: 11px;
+	color: #ccc;
+}
+
+.intro .summary p:first-letter {
+	font-size: 100%;
+	font-weight: normal;
+	color: #ccc;
+}
+
+.intro .summary p:last-child a { 
+	color: #ccc;
+}
+
+.intro .preamble {
+	background: url(intro_bg.jpg);
+	width: 560px;
+}
+
+.intro .preamble h3 {
+	background: url(preamble.jpg) no-repeat;
+	height: 47px;
+}
+
+.intro .preamble p {
+	padding-left: 86px;
+	padding-right: 85px;
+	padding-top: 10px;
+}
+
+.intro .preamble p:nth-child(2) {
+	background: url(preamble_bg.jpg) no-repeat bottom;
+}
+
+.intro .preamble p:last-child {
+	background: url(preamble_img.jpg) no-repeat top;
+	padding-bottom: 60px;
+	padding-left: 280px;
+}
+
+.supporting {
+	background: url(st_bg.jpg) repeat-y;
+	width: 560px;
+}
+
+.supporting p {
+	padding-left: 106px;
+	padding-right: 105px;
+	padding-top: 10px;
+}
+
+.supporting .explanation {
+	background: url(explanation_bg.jpg) no-repeat top;
+}
+
+.supporting .explanation h3 {
+	background: url(trans_prea_expl.jpg) no-repeat;
+  	height: 153px;
+}
+
+.supporting .explanation p:last-child {
+	background: url(explanation_img.jpg) no-repeat bottom;
+	padding-bottom: 50px;
+}
+
+.supporting .participation {
+	background: url(participation_bg.jpg) repeat-y;
+}
+
+.supporting .participation h3 {
+	background:url(trans_expl_part.jpg) no-repeat;
+	height: 155px;
+}
+
+.supporting .participation p:last-child {
+	background: url(participation_img.jpg) no-repeat bottom;
+	padding-left: 160px;
+	padding-right: 170px;
+	padding-bottom: 20px;
+}
+
+.supporting .benefits {
+	background: url(benefits_bg.jpg) repeat-y;
+}
+
+.supporting .benefits h3 {
+	background: url(trans_part_bene.jpg) no-repeat;
+  	height: 147px;
+}
+
+.supporting .benefits p {
+	padding-right: 145px;
+	padding-left: 146px;
+}
+
+.supporting .requirements {
+	background: url(requirements.jpg) no-repeat bottom;
+	padding-bottom: 105px;
+}
+
+.supporting .requirements h3 {
+	background: url(trans_bene_requ.jpg) no-repeat;
+  	height: 230px;
+}
+
+.supporting .requirements p:nth-child(2) {
+	background: url(requirements_img.jpg) no-repeat top;
+	padding-top: 100px;
+}
+
+.supporting .requirements p:last-child {
+	padding-bottom: 10px;
+}
+
+.supporting footer {
+	background: url(footer_bg.jpg) repeat-y;
+	font-size: 11px;
+   	padding: 3px;
+ 	height: 35px;
+}
+
+.supporting footer a {
+	font-weight: bold;
+}
+  
+.sidebar {
+  	position: absolute;
+	top: 400px;
+	right: 0;
+	width: 190px;
+}
+
+.sidebar h3 {
+	height: 70px;
+}
+
+.sidebar .wrapper>div {
+	margin-bottom: 10px;
+	padding-bottom: 127px;
+	background: url(linklist_footer.jpg) no-repeat bottom;
+}
+
+.sidebar .wrapper .zen-resources {
+	background: url(linklist_footer_guard.jpg) no-repeat bottom;
+}
+
+.sidebar .design-selection h3 {	
+ 	background: url(header_lselect.jpg) no-repeat;
+}
+
+.sidebar .design-archives h3 {
+	background: url(header_larchives.jpg) no-repeat;
+}
+
+.sidebar .zen-resources h3 {
+	background: url(header_lresources.jpg) no-repeat;
+}
+
+.sidebar ul {
+	background: url(linklist_bg.jpg) repeat-y;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin: 0px;
+}
+
+.sidebar li {
+	list-style-type: none;
+	font-size: 10px;
+	line-height: 14px;
+	color: #D4D2D2;
+	padding: 3px;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #ccc;
+}
+
+.sidebar a {
+	font-weight: bold;
+	color: #fff;
+}
+
+.sidebar a.design-name {
+	display: block;
+}
+
+.sidebar a.designer-name {
+	font-weight: normal;
+	color: #D4D2D2;
+}
