@@ -1,0 +1,383 @@
+body {
+	background: url(paper.jpg) repeat-y #FFF center top;
+	color: black;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+p {
+	font: 12px Comic Sans MS, Verdana, sans serif;
+	text-align: center;
+	line-height: 100%;
+	margin-top: 5px;
+}
+
+h3 {
+	display: none;
+}
+
+abbr {
+	font-weight: bold;
+	cursor: help;
+}
+
+.page-wrapper {
+	margin: 0 auto;
+	width: 760px;
+}
+
+.page-wrapper::before, 
+.page-wrapper::after {
+	content: "";
+	position: absolute;
+	height: 40px;
+	width: 820px;
+	background: url(paperedge.jpg) no-repeat;
+	left: 50%;
+	margin-left: -410px;
+}
+
+.page-wrapper::before {
+	top: 0;
+	background-position: bottom;
+}
+
+/*PAGE 1*/
+.intro {
+	position: relative;
+	height: 1385px;
+	margin-top: 40px;
+}
+
+.intro header {
+	display: none;
+}
+
+.intro .summary {
+	position: absolute;
+	left: 6px;
+	top: 9px;
+	width: 750px;
+	height: 491px;
+	background: url(P1PANEL1.jpg) no-repeat;
+}
+
+.intro .summary p:first-child {
+	position: absolute;
+	left: 71px;
+	top: 28px;
+	width: 328px;
+	font-size: 16px;
+}
+
+.intro .summary p:last-child {
+	width: 98%;
+	text-align: right;
+	font: 9px Arial, Helvetica, sans serif;
+}
+
+.intro .summary p:last-child::before {
+	content: "\00A9 "
+}
+
+.intro .preamble p:nth-child(2) {
+	position: absolute;
+	left: 5px;
+	top: 506px;
+	width: 127px;
+	height: 398px;
+	padding: 30px 22px 0 217px;
+	background:url(P1PANEL2.jpg) no-repeat;
+}
+
+.intro .preamble p:nth-child(3) {
+	position: absolute;
+	left: 384px;
+	top: 507px;
+	width: 160px;
+	height: 417px;
+	padding: 18px 192px 0 18px;
+	background: url(P1PANEL3.jpg) no-repeat;
+}
+
+.intro .preamble p:nth-child(4) {
+	position: absolute;
+	left: 4px;
+	top: 941px;
+	width: 348px;
+	height: 417px;
+	padding: 5px 398px 0 5px;
+	background: url(P1PANEL45.jpg) no-repeat;
+}
+
+/*PAGE 2*/
+.supporting::before,
+.supporting::after {
+	content: "";
+	position: absolute;
+	height: 100px;
+	width: 820px;
+	background: url(paperedge.jpg) no-repeat bottom;
+	left: 50%;
+	margin-left: -410px;
+}
+
+.supporting::before {
+	top: 1420px;
+}
+
+.supporting::after {
+	top: 2840px;
+}
+
+.supporting .explanation {
+	position: relative;
+	height: 535px;
+	margin-top: 100px;
+}
+
+.supporting .explanation p:nth-child(2) {
+	position: absolute;
+	left: 3px;
+	top: 1px;
+	width: 256px;
+	height: 500px;
+	padding: 9px 6px 0 197px;
+	background: url(P2PANEL1.jpg) no-repeat;
+}
+
+.supporting .explanation p:nth-child(3) {
+	position: absolute;
+	left: 462px;
+	top: 12px;
+	width: 267px;
+	height: 480px;
+	padding: 11px 13px 0 12px;
+	background: url(P2PANEL2.jpg) no-repeat;
+}
+
+.supporting .participation {
+	position: relative;
+	width: 760px;
+	height: 795px;
+	margin-top: -17px;
+	background: url(P2PANEL5.jpg) no-repeat 19px 343px;
+}
+
+.supporting .participation h3 {
+	display: block;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	left: 4px;
+	top: 0px;
+	width: 747px;
+	height: 343px;
+	background: url(P2PANEL34.jpg) no-repeat;
+	margin: 0;
+}
+
+.supporting .participation p {
+	position: relative;
+	top: 583px;
+	left: 437px;
+	width: 299px;
+	margin-top: 10px;
+	font: 10px Arial, Helvetica, sans serif;
+	text-align: left;
+	line-height: 100%;
+	color: #EEECD5;
+	font-weight: bold;
+}
+
+.supporting .participation p:nth-child(2) {
+	margin: 0;
+}
+
+.supporting .participation a {
+	text-decoration: underline;
+	color: #EEECD5;
+}
+
+/*PAGE 3*/
+.supporting .benefits {
+	position: relative;
+	height: 726px;
+	background: url(P3PANEL1.jpg) no-repeat black;
+	margin-top: 112px;
+}
+
+.supporting .benefits p {
+	position: absolute;
+	left: 53px;
+	top: 418px;
+	width: 298px;
+	margin: 0;
+}
+
+.supporting .requirements {
+	position: relative;
+	background: url(dots.gif) black;
+	padding: 10px;
+	margin-top: 10px;
+	border: 2px solid #FCC;
+	width: 440px;
+	height: 508px;
+}
+
+.supporting .requirements h3 {
+	display: inline;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	float: right;
+	background: url(sparky.gif) no-repeat;
+	width: 190px;
+	height: 190px;
+}
+
+.supporting .requirements p {
+	text-align: left;
+	font: 9pt Arial, Helvetica, sans serif;
+	line-height: 140%;
+}
+
+.supporting .requirements p:nth-child(2) {
+	font-style: italic;
+}
+
+.supporting .requirements p:last-child {
+	display: none;
+}
+
+.sidebar {
+	font: 10px Arial, Helvetica, sans serif;
+	position: relative;
+	margin-top: -593px;
+	left: 470px;
+	width: 280px;
+	padding-bottom: 25px;
+}
+
+.sidebar a {
+	display: block;
+	font: 9px Arial Black, Helvetica, Arial, sans serif;
+	text-transform: uppercase;
+	padding-bottom: 22px;
+}
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar li {
+	margin: 0;
+	padding: 8px 3px;
+	list-style: none;
+	font-weight: bold;
+	text-align: right;
+}
+
+.sidebar .design-selection {
+	position: absolute;
+	width: 140px;
+}
+
+.sidebar .design-selection li{
+	border-top: 2px dotted #200;
+	border-left: 2px dotted #200;
+}
+
+.sidebar .design-selection li:last-child {
+	border-bottom: 2px dotted #200;
+}
+
+.sidebar .design-selection a.designer-name {
+	display: inline;
+	font: italic 10px Arial, Helvetica, sans serif;
+}
+
+.sidebar .design-archives {
+	position: relative;
+	left: 140px;
+	top: 0;
+	width: 140px;
+}
+
+.sidebar .design-archives li {
+	border-top: 2px dotted #200;
+	border-left: 2px dotted #200;
+	border-right: 2px dotted #200;
+	padding-bottom: 21px;
+}
+
+.sidebar .zen-resources {
+	padding-top: 64px;
+	position: relative;
+	left: 140px;
+	width: 136px;
+	background: url(adcc.gif) no-repeat #FFC 7px 10px;
+	border: 2px dotted #200;
+}
+
+.sidebar .zen-resources li {
+	border-top: 2px dotted #200;
+	padding-bottom: 21px;
+}
+
+.sidebar li {
+	background: url(ad1.gif) no-repeat white 5px 10px;
+}
+
+.sidebar li + li {
+	background: url(ad2.gif) no-repeat #DFACAC 5px 10px;
+}
+
+.sidebar li + li + li {
+	background: url(ad3.gif) no-repeat #A5A5D8 5px 10px;
+}
+
+.sidebar li + li + li + li {
+	background: url(ad5.gif) no-repeat #FFC 5px 10px;
+}
+
+.sidebar li + li + li + li + li {
+	background: url(ad4.gif) no-repeat white 5px 10px;
+}
+
+.sidebar li + li + li + li + li + li,
+.sidebar .design-archives li {
+	background: url(ad6.gif) no-repeat #DFACAC 5px 24px;
+}
+
+.sidebar li + li + li + li + li + li + li,
+.sidebar .design-archives li + li {
+	background: url(ad7.gif) no-repeat #A5A5D8 5px 10px;
+}
+
+.sidebar li + li + li + li + li + li + li + li,
+.sidebar .design-archives li + li + li {
+	background: url(ad8.gif) no-repeat #FFC 5px 10px;
+}
+
+.supporting footer {
+	padding-top: 3px;
+	font: 9px Arial, Helvetica, sans serif;
+	text-align: center;
+	position: relative;
+	height: 60px;
+	z-index: 2;
+}
+
+.supporting footer::before {
+	display: block;
+	padding-top: 10px;
+	text-align: center;
+	content: "Approved by the Comics Code of America. Bandwidth graciously donated by Media Temple. All images used in this Zen Garden are based on freely available images in the public domain. These images and the accompanying CSS are hereby returned to the public domain, as per the Creative Commons Public Domain Dedication (http://creativecommons.org/licenses/publicdomain/). Build on the past, and free your creativity. Fight for fair and reasonable copyright laws.";
+}
