@@ -1,0 +1,212 @@
+body {
+	background: #000 url(body-bg.jpg) repeat-y top center;
+	color: #fff;
+	font: 75% "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+	font-variant: small-caps;
+	margin: 0;
+}
+
+h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-size: 100%;
+	line-height: 110%;
+}
+
+abbr {
+	text-decoration: none;
+	border-bottom: 1px dotted #ccc;
+	cursor: help;
+}
+
+a:link,
+a:visited {
+	color: #fdf4b3;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.page-wrapper {
+	position: relative;
+	width: 750px;
+	margin: 0 auto;
+	text-align: left;
+	background: url(container-bg.jpg) no-repeat 0 51px;
+	border-bottom: 5px solid #fdf4b3;
+}
+
+.intro header h1, 
+.intro header h2,
+.intro .summary p:first-child,
+.intro .preamble p:nth-child(2),
+.intro .preamble p:nth-child(3) {
+	display: none;
+}
+
+.intro header {
+	width: 750px;
+	height: 50px;
+	background: url(header-bg.jpg) no-repeat;
+	border-bottom: 1px solid #fdf4b3;
+}
+
+.intro .summary p:last-child { 
+	width: 98%;
+	text-align: right;
+}
+
+.intro .summary p:last-child a {
+	font-size: 160%;
+}
+
+.intro .preamble {
+	margin-top: 170px;
+	margin-right: 50px;
+	margin-left: 470px;
+}
+
+.intro .preamble h3 { 
+	width: 195px;
+	height: 140px;
+	background: url(preamble-h3.gif) no-repeat left bottom; 
+}
+
+.intro .preamble p:nth-child(4) {
+	width: 220px; 
+	font-size: 120%;
+}
+
+.supporting .explanation p:nth-child(2),
+.supporting .participation p:nth-child(2),
+.supporting .participation p:nth-child(3),
+.supporting .benefits,
+.supporting .requirements p:nth-child(2),
+.supporting .requirements p:nth-child(3),
+.supporting .requirements p:nth-child(5) {
+	display: none;
+}
+
+.supporting {
+	margin-top: 140px;
+	margin-left: 250px;
+	margin-right: 40px;
+}
+
+.supporting .explanation {
+	height: 150px;
+	padding-left: 230px;
+	background: url(explanation-h3.gif) no-repeat left bottom;
+	margin-bottom: 20px;
+}
+
+.supporting .participation {
+	height: 180px;
+	padding-right: 240px;
+	background: url(participation-h3.gif) no-repeat top right;
+}
+
+.supporting .requirements {
+	height: 180px;
+	padding-left: 240px;
+	background: url(requirements-h3.gif) no-repeat;
+}
+
+.supporting .requirements p:nth-child(6) {
+	margin-top: 50px;
+}
+
+.supporting footer {
+	width: 750px;
+	margin-left: -250px;
+	margin-top: 80px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	background: url(footer-bg.gif) no-repeat top center;
+	text-align: center;
+}
+
+.supporting footer a:link, footer a:visited { 
+	padding-left: 4px;
+	font-size: 90%;
+	background: #666;
+	border: 1px solid #999;
+	color: #ccc;
+}
+
+.supporting footer a:hover { 
+	background: #555;
+	text-decoration: none;
+}
+
+.sidebar {
+	position: absolute;
+	top: 70px;
+}
+
+.sidebar ul {
+	margin: 10px;
+	margin-top: 30px;
+	padding: 0;
+}
+
+.sidebar li { 
+	list-style-type: none; 
+	line-height: 200%;
+}
+
+.sidebar .design-selection h3 {
+	width: 200px;
+	height: 45px;
+	background: url(lselect-h3.gif) no-repeat;
+}
+
+.sidebar .design-selection li {
+	padding-bottom: 10px;
+	font-variant: normal;
+	text-align: right;
+	line-height: 16px;
+}
+
+.sidebar .design-selection a:link,
+.sidebar .design-selection a:visited { 
+	display: block;
+	font-variant: small-caps;
+}
+
+.sidebar .design-selection a.designer-name:link,
+.sidebar .design-selection a.designer-name:visited { 
+	display: inline;
+	font-size: 190%;
+	letter-spacing: -1px;
+	color: #fff;
+}
+
+.sidebar .design-archives,
+.sidebar .zen-resources {
+	margin-top: 60px;
+	margin-left: 20px;
+}
+
+.sidebar .design-archives h3 {
+	width: 90px;
+	height: 20px; 
+	background: url(larchives-h3.gif) no-repeat;
+}
+
+.sidebar .zen-resources h3 {
+	width: 90px;
+	height: 20px; 
+	background: url(lresources-h3.gif) no-repeat;
+}
