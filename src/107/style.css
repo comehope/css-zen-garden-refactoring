@@ -1,0 +1,158 @@
+body {
+	height: 3000px;
+	background: #000 url("screwoff.gif") no-repeat;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	font-weight: bold;
+	color: #000;
+}
+
+p {
+	margin-top: 0;
+}
+
+a {
+	color: #000;
+}
+
+a:hover,
+.supporting * a:hover,
+.sidebar * a:hover
+{
+	text-decoration: line-through;
+}
+
+.intro header {
+	display: none;
+}
+
+.intro .summary p:first-child {
+	position: absolute;
+	left: 15px;
+	top: 588px;
+	width: 115px;
+	color: #fff;
+}
+
+.intro .summary p:last-child {
+	position: absolute;
+	left: 5px;
+	top: 2985px;
+	color: #fff;
+}
+
+.intro .summary a {
+	color: #fff;
+}
+
+.intro .summary a:hover {
+	color: #f00;
+}
+
+.intro .preamble {
+	position: absolute;
+	left: 165px;
+	top: 700px;
+	width: 245px;
+}
+
+.intro .preamble p:nth-child(3){
+	margin-left: 30px;
+}
+
+.intro .preamble p:nth-child(4){
+	margin-left: 50px;
+}
+
+.intro .preamble h3 {
+	display: none;
+}
+
+.supporting h3 {
+	display: none;
+}
+
+.supporting .explanation {
+	position: absolute;
+	top: 1190px;
+	left: 265px;
+	width: 455px;
+}
+
+.supporting .participation {
+	position: absolute;
+	top: 1412px;
+	left: 23px;
+	width: 100px;
+}
+
+.supporting .benefits {
+	position: absolute;
+	top: 1932px;
+	left: 155px;
+	width: 577px;
+}
+
+.supporting .requirements {
+	position: absolute;
+	top: 2408px;
+	left: 197px;
+	width: 520px;
+	text-align: right;
+}
+
+.supporting .requirements p:last-child{
+	position: absolute;
+	top: 550px;
+	left: -100px;
+	width: 580px;
+	color: #fff;
+}
+
+.supporting .requirements p:last-child a {
+	color: #fff;
+}
+
+.supporting .requirements p:last-child a:hover
+ {
+	color: #f00;
+}
+
+.supporting footer {
+	position: absolute;
+	top: 2985px;
+	left: 600px;
+}
+
+.supporting footer a {
+	color: #f00;
+	text-decoration: none;
+}
+
+.sidebar {
+	position: absolute;
+	top: 710px;
+	left: 0px;
+	color: #f00;
+}
+
+.sidebar h3 {
+	margin: 0px;
+}
+
+.sidebar ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.sidebar li {
+	list-style-type: none;
+	margin-left: 5px;
+	line-height: 9px;
+}
+
+.sidebar a {
+	display: block;
+	color: #f00;
+	text-decoration: none;
+}
