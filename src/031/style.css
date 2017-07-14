@@ -1,0 +1,180 @@
+body {
+	margin: 0;
+	background: #FFF url("bg_tree.gif") repeat-x left top;
+	color: #888;
+}
+
+h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 0;
+	background-repeat: no-repeat;
+}
+
+a {
+	color: #090;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #663;
+	text-decoration: underline;
+}
+
+.page-wrapper {
+	position: relative;
+	width: 732px;
+	margin: 0 auto;
+}
+
+.intro header {
+	height: 200px;
+	background: url("nutitle.gif") no-repeat;
+}
+
+.intro header h1,
+.intro header h2 {
+	display: none;
+}
+
+.intro .summary {
+	position: absolute;
+	top: 215px;
+	right: 15px;
+	width: 120px;
+}
+
+.intro .summary p:first-child {
+	font-size: 80%;
+	text-align: right;
+}
+
+.intro .summary p:last-child {
+	margin-top: 40px;
+	font-size: 93%;
+	text-align: center;
+	padding-bottom: 90px;
+	background: url("barrow.gif") no-repeat bottom;
+}
+
+.intro .summary p:last-child a {
+	white-space: nowrap;
+	font: bold 92%/1.3em Verdana,Arial,Sans-serif;
+	text-transform: uppercase;
+}
+
+.intro .preamble {
+	padding-left: 195px;
+}
+
+.intro .preamble h3 {
+	height: 70px;
+	background-image: url("road.gif");
+}
+
+.intro .preamble p {
+	width: 350px;
+}
+
+.supporting {
+	padding-left: 195px;
+	width: 400px;
+}
+
+.supporting h3 {
+	height: 70px;
+}
+
+.supporting p {
+	line-height: 1.5em;
+}
+
+.supporting .explanation h3 {
+	background-image: url("what.gif");
+}
+
+.supporting .participation h3 {
+	background-image: url("participation.gif");
+}
+
+.supporting .benefits h3 {
+	background-image: url("benefits.gif");
+}
+
+.supporting .requirements h3 {
+	background-image: url("requirements.gif");
+}
+
+.supporting footer {
+	background: #D9D98B;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 1px solid #363;
+	border-bottom: 2px solid #363;
+	text-align: center;
+}
+
+.supporting footer a {
+	font: 85% Verdana,Arial,Sans-serif;
+	margin-right: 5px;
+	font-weight: normal;
+}
+
+.sidebar {
+	position: absolute;
+	top: 200px;
+	width: 190px;
+}
+
+.sidebar div {
+	margin-top: 20px;
+}
+
+.sidebar h3 {
+	height: 31px;
+}
+
+.sidebar ul {
+	padding-left: 0;
+	font-size: 90%;
+}
+
+.sidebar li {
+	list-style-type: none;
+	margin-bottom: 0.5em;
+	line-height: 1em;
+}
+
+.sidebar a {
+	font-family: Verdana,Arial,Sans-serif;
+	font-size: 90%;
+}
+
+.sidebar .design-selection h3 {
+	background-image: url("select.gif");
+}
+
+.sidebar .design-archives h3 {
+	background-image: url("archives.gif");
+}
+
+.sidebar .zen-resources h3 {
+	background-image: url("resources.gif");
+}
+
+.sidebar .design-selection a.design-name {
+	display: block;
+}
+
+.sidebar .design-selection a.designer-name {
+	font-family: Georgia,Serif;
+	font-weight: normal;
+	text-transform: lowercase;
+}
+
+.sidebar .design-archives,
+.sidebar .zen-resources {
+	text-transform: lowercase;
+}
