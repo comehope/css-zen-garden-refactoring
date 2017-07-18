@@ -1,0 +1,215 @@
+body {
+  background: url(ody-bg3.jpg) repeat-y #000 fixed;
+  margin: 0;
+}
+h3 {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  background-repeat: no-repeat;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #C29E47;
+}
+a:hover,
+a:active {
+  text-decoration: underline;
+  color: #FFEAC8;
+}
+abbr {
+  cursor: help;
+}
+.intro {
+  position: relative;
+  margin-left: 35px;
+  background: url(intro-bg.gif) repeat-x;
+}
+.intro p {
+  margin: 0;
+}
+.intro abbr {
+  color: #E4CF9D;
+}
+.intro header {
+  height: 98px;
+  background: url(title2.gif) -2px 0px no-repeat;
+}
+.intro header h1,
+.intro header h2 {
+  display: none;
+}
+.intro .summary {
+  position: absolute;
+  left: 435px;
+  top: 425px;
+  width: 300px;
+}
+.intro .summary p {
+  font: italic 0.7em/1.2em arial, sans-serif;
+  color: #AF9874;
+  margin-bottom: 10px;
+}
+.intro .summary p:last-child {
+  color: #E4CF9D;
+}
+.intro .preamble {
+  height: 450px;
+  width: 424px;
+  background: url(preamb2.gif) -2px 231px no-repeat;
+}
+.intro .preamble h3 {
+  height: 20px;
+  padding-top: 20px;
+  margin-left: 20px;
+  background-image: url(preamb_title.gif);
+  background-position: bottom left;
+}
+.intro .preamble p {
+  margin-top: 4px;
+  margin-left: 20px;
+  width: 310px;
+  text-indent: 10px;
+  font: italic 12px/15px arial, georgia, serif;
+  color: #AF9874;
+}
+.supporting {
+  width: 424px;
+  margin-left: 33px;
+  font: 0.8em/1.5em arial, sans-serif;
+}
+.supporting > div {
+  margin-top: 2em;
+  margin-bottom: -30px;
+}
+.supporting h3 {
+  height: 134px;
+}
+.supporting p {
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 290px;
+  color: #E4CF9D;
+}
+.supporting p:nth-child(2) {
+  margin-top: -40px;
+}
+.supporting .explanation {
+  margin-top: 0;
+}
+.supporting .explanation h3 {
+  background-image: url(hd-explain.gif);
+}
+.supporting .explanation p:nth-child(2) {
+  margin-top: -90px;
+}
+.supporting .participation h3 {
+  background-image: url(hd-partic.gif);
+}
+.supporting .benefits h3 {
+  background-image: url(hd-benefits.gif);
+}
+.supporting .requirements {
+  margin-bottom: 0;
+}
+.supporting .requirements h3 {
+  background-image: url(hd-require.gif);
+}
+.supporting .requirements p:last-child {
+  margin-bottom: 10px;
+  font: italic 11px/14px arial, sans-serif;
+}
+.supporting footer {
+  background: url(footer.gif) no-repeat;
+  height: 56px;
+  padding-left: 30px;
+}
+.supporting footer a {
+  color: #C29E47;
+  text-transform: uppercase;
+  font: 11px/54px arial, serif;
+}
+.supporting footer a:hover {
+  text-decoration: none;
+  color: #FFEAC8;
+}
+.sidebar {
+  position: absolute;
+  left: 405px;
+  right: 0px;
+  top: 98px;
+  height: 320px;
+  color: #73552A;
+  font-size: .6em;
+  font-family: arial, sans-serif;
+  overflow: hidden;
+  background: url(list-bg.gif) bottom right repeat-y;
+}
+.sidebar .wrapper {
+  margin-top: 12px;
+  margin-left: 15px;
+}
+.sidebar ul {
+  margin: 0;
+  margin-bottom: 10px;
+  padding-left: 0;
+}
+.sidebar li {
+  list-style-type: none;
+}
+.sidebar h3 {
+  height: 17px;
+  margin-bottom: 4px;
+}
+.sidebar .wrapper > div {
+  float: left;
+  margin-right: 0px;
+  width: 18em;
+}
+.sidebar .design-selection h3 {
+  background-image: url(select.gif);
+}
+.sidebar .design-archives h3 {
+  background-image: url(archives.gif);
+}
+.sidebar .zen-resources h3 {
+  background-image: url(resources.gif);
+}
+.sidebar .design-selection li {
+  padding-bottom: 6px;
+  padding-left: 25px;
+  background: url(bullet.gif) 14px 0.4em no-repeat;
+}
+.sidebar .design-selection li a {
+  font-family: georgia, "times new roman", serif;
+  font-size: 120%;
+  color: #E4CF9D;
+}
+.sidebar .design-selection li a:hover {
+  color: #C29E47;
+  text-decoration: none;
+}
+.sidebar .design-selection li a.designer-name {
+  font-size: 100%;
+  color: #AF9874;
+}
+.sidebar .design-selection li a.designer-name:hover {
+  color: #C29E47;
+}
+.sidebar .design-archives li,
+.sidebar .zen-resources li {
+  padding-bottom: 2px;
+  padding-left: 30px;
+}
+.sidebar .design-archives a,
+.sidebar .zen-resources a {
+  font-family: georgia, "times new roman", serif;
+  color: #E4CF9D;
+  text-transform: capitalize;
+}
+.sidebar .design-archives a:hover,
+.sidebar .zen-resources a:hover {
+  color: #C29E47;
+}
