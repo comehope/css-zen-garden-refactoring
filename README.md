@@ -7,6 +7,7 @@
 * [030 Entomology](notes/030.md)
 * [031 Hedges](notes/031.md)
 * [037 Pret-a-porter](notes/037.md)
+* [050 First Summary](notes/050.md)
 * [058 Radio Zen](notes/058.md)
 * [068 Ballade](notes/068.md)
 * [083 Springtime](notes/083.md)
