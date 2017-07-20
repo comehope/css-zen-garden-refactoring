@@ -10,6 +10,7 @@
 * [050 First Summary](notes/050.md)
 * [058 Radio Zen](notes/058.md)
 * [068 Ballade](notes/068.md)
+* [069 Bonsai Sky](notes/069.md)
 * [083 Springtime](notes/083.md)
 * [091 webZine](notes/091.md)
 * [099 Wiggles The Wonderworm](notes/099.md)
