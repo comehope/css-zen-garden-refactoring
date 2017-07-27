@@ -1,0 +1,140 @@
+h2, h3, .intro header h1 {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.intro header h1, .supporting .explanation, .supporting .participation, .sidebar {
+  width: 750px;
+  padding-left: 95px;
+  padding-right: 395px; }
+
+.intro header h2, .intro .summary, .intro .preamble, .supporting .benefits, .supporting .requirements, .supporting footer {
+  width: 750px;
+  padding-left: 395px;
+  padding-right: 95px; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  border-top: 15px solid black;
+  border-bottom: 15px solid black;
+  background-image: linear-gradient(to right, white 0%, white 50%, #10a2c5 50%, #10a2c5 100%);
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+h2, h3 {
+  background-repeat: no-repeat;
+  height: 38px;
+  margin-bottom: 6px; }
+
+p {
+  padding-bottom: 1em; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: overline; }
+
+.page-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 750px; }
+
+.intro {
+  background-image: linear-gradient(to right, #d2f4fe 30px, #9addf4 30px, #9addf4 70px, #10a2c5 70px, #10a2c5 75px, #00c2ec 75px, #00c2ec 675px, #9addf4 675px, #9addf4 715px, #d2f4fe 715px, #d2f4fe 745px, white 745px, white 750px); }
+  .intro::after {
+    content: "";
+    position: absolute;
+    width: 750px;
+    height: 135px;
+    background: url(crossing.gif) no-repeat; }
+  .intro header h1 {
+    position: absolute;
+    top: 0;
+    background: url(logo.gif) no-repeat top left -1px;
+    height: 270px; }
+  .intro header h2 {
+    position: absolute;
+    top: 20px;
+    background-image: url(quickSummary.gif);
+    background-position: top left 395px; }
+  .intro .summary {
+    padding-top: 64px; }
+  .intro .preamble {
+    padding-bottom: 195px; }
+    .intro .preamble h3 {
+      background-image: url(preamble.gif); }
+
+.supporting {
+  position: relative;
+  background-image: linear-gradient(to right, #9addf4 40px, #d2f4fe 40px, #d2f4fe 70px, white 70px, white 75px, #10a2c5 75px, #10a2c5 750px);
+  margin-top: 135px; }
+  .supporting .explanation h3 {
+    background-image: url(explanation.gif); }
+  .supporting .participation {
+    position: relative;
+    padding-bottom: 120px; }
+    .supporting .participation::after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: "";
+      width: 750px;
+      height: 100px;
+      background: url(wave.gif) no-repeat; }
+    .supporting .participation h3 {
+      background-image: url(participation.gif); }
+  .supporting .benefits {
+    position: absolute;
+    top: 0; }
+    .supporting .benefits h3 {
+      background-image: url(benefits.gif); }
+  .supporting .requirements {
+    position: absolute;
+    top: 300px; }
+    .supporting .requirements h3 {
+      background-image: url(requirements.gif);
+      height: 44px;
+      margin-bottom: 0; }
+  .supporting footer {
+    padding-top: 150px;
+    padding-bottom: 5px;
+    background-image: linear-gradient(to right, white 300px, #9addf4 300px, #9addf4 340px, #d2f4fe 340px, #d2f4fe 370px, white 370px, white 375px, #10a2c5 375px, #10a2c5 750px); }
+
+.sidebar {
+  position: absolute;
+  top: 270px; }
+  .sidebar h3 {
+    display: none; }
+  .sidebar ul {
+    list-style-type: none; }
+  .sidebar .design-selection a.design-name {
+    display: block;
+    font-size: x-large; }
+  .sidebar .design-selection a.designer-name {
+    color: #000;
+    font-size: large; }
+  .sidebar .design-archives {
+    padding-top: 2em;
+    padding-bottom: 1em; }
+  .sidebar .zen-resources li {
+    padding-left: 12px;
+    position: relative; }
+    .sidebar .zen-resources li::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: -10px;
+      width: 0;
+      height: 0;
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-left: 4px solid white; }

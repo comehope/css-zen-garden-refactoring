@@ -1,0 +1,231 @@
+$page-width: 750px;
+$half-width: $page-width / 2;
+$center-padding: 20px;
+$left-or-right-padding: 95px;
+$intro-after-height: 135px;
+$blue-1: #d2f4fe;
+$blue-2: #9addf4;
+$blue-3: #00c2ec;
+$blue-4: #10a2c5;
+
+%kellum-method {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;	
+}
+
+%left-side {
+	width: $page-width;
+	padding-left: $left-or-right-padding;
+	padding-right: $center-padding + $half-width;
+}
+
+%right-side {
+	width: $page-width;
+	padding-left: $half-width + $center-padding;
+	padding-right: $left-or-right-padding;
+}
+
+@mixin triangle($width, $color) {
+	width: 0; 
+	height: 0; 
+	border-top: $width solid transparent;
+	border-bottom: $width solid transparent;
+	border-left: $width solid $color;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	$border: 15px solid black;
+	margin: 0;
+	border-top: $border;
+	border-bottom: $border;
+	background-image: linear-gradient(to right, white 0%, white 50%, $blue-4 50%, $blue-4 100%);
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h2, h3 {
+	@extend %kellum-method;
+	background-repeat: no-repeat;
+	height: 38px;
+	margin-bottom: 6px;
+}
+
+p {
+	padding-bottom: 1em;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: overline;
+}
+
+.page-wrapper {
+	position: relative;
+	margin: 0 auto;
+	width: $page-width;
+}
+
+.intro {
+	background-image: linear-gradient(to right, $blue-1 30px, $blue-2 30px, $blue-2 70px, $blue-4 70px, $blue-4 75px, $blue-3 75px, $blue-3 675px, $blue-2 675px, $blue-2 715px, $blue-1 715px, $blue-1 745px, white 745px, white 750px);
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: $page-width;
+		height: $intro-after-height;
+		background: url(crossing.gif) no-repeat;
+	}
+
+	header {
+		h1 {
+			@extend %left-side;
+			@extend %kellum-method;
+			position: absolute;
+			top: 0;
+			background: url(logo.gif) no-repeat top left -1px;
+			height: 270px;
+		}
+
+		h2 {
+			@extend %right-side;
+			position: absolute;
+			top: 20px;
+			background-image: url(quickSummary.gif);
+			background-position: top left $half-width + $center-padding;
+		}
+	}
+
+	.summary {
+		@extend %right-side;
+		padding-top: 64px;
+	}
+
+	.preamble {
+		@extend %right-side;
+		padding-bottom: 195px;
+
+		h3 {
+			background-image: url(preamble.gif);
+		}
+	}
+}
+
+.supporting {
+	position: relative;
+	background-image: linear-gradient(to right, $blue-2 40px, $blue-1 40px, $blue-1 70px, white 70px, white 75px, $blue-4 75px, $blue-4 750px);
+	margin-top: $intro-after-height;
+
+	.explanation {
+		@extend %left-side;
+
+		h3 {
+			background-image: url(explanation.gif);
+		}
+	}
+
+	.participation {
+		@extend %left-side;
+		position: relative;
+		padding-bottom: 120px;
+
+		&::after {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			content: "";
+			width: $page-width;
+			height: 100px;
+			background: url(wave.gif) no-repeat;
+		}
+
+		h3 {
+			background-image: url(participation.gif);
+		}
+	}
+
+	.benefits {
+		@extend %right-side;
+		position: absolute;
+		top: 0;
+
+		h3 {
+			background-image: url(benefits.gif);
+		}
+	}
+
+	.requirements {
+		@extend %right-side;
+		position: absolute;
+		top: 300px;
+
+		h3 {
+			background-image: url(requirements.gif);
+			height: 44px;
+			margin-bottom: 0;
+		}
+	}
+
+	footer {
+		@extend %right-side;
+		padding-top: 150px;
+		padding-bottom: 5px;
+		background-image: linear-gradient(to right, white 300px, $blue-2 300px, $blue-2 340px, $blue-1 340px, $blue-1 370px, white 370px, white 375px, $blue-4 375px, $blue-4 750px);
+	}
+}
+
+.sidebar {
+	@extend %left-side;
+	position: absolute;
+	top: 270px;
+
+	h3 {
+		display: none;
+	}
+
+	ul {
+		list-style-type: none;
+	}
+
+	.design-selection {
+		a.design-name {
+			display: block;
+			font-size: x-large;
+		}
+
+		a.designer-name {
+			color: #000;
+			font-size: large;
+		}
+	}
+
+	.design-archives {
+		padding-top: 2em;
+		padding-bottom: 1em;
+	}
+
+	.zen-resources li {
+		padding-left: 12px;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top:50%;
+			transform:translateY(-50%);
+			margin-left:-10px;
+			@include triangle(4px, white);
+		}
+	}
+}
