@@ -19,6 +19,7 @@
 * [107 Adam Poiselli Deflance](notes/107.md)
 * [142 Invasion of The Body Switchers](notes/142.md)
 * [148 Museum](notes/148.md)
+* [177 Zen City Morning](notes/177.md)
 * [193 Leggo My Ego](notes/193.md)
 * [198 The Original](notes/198.md)
 * [202 Retro Theater](notes/202.md)

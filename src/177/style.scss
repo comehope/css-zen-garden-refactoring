@@ -1,0 +1,245 @@
+%kellum-method {
+	text-indent: 110%;
+	white-space: nowrap;
+	overflow: hidden;	
+}
+
+@mixin bg-image($img, $height) {
+	background-image: url($img);
+	height: $height;
+}
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body {
+	background:#0A3443 url(r3_zc_main_bg.jpg) repeat-y;
+	font-family:verdana, arial, sans-serif;
+	font-size: 11px;
+
+	&::before {
+		content: "";
+		position:fixed;
+		left:0;
+		top:0;
+		width:770px;
+		height:184px;
+		background:url(r3_zc_clouds.png) no-repeat;
+		z-index: 2;
+	}
+}
+
+h3 {
+	@extend %kellum-method;
+	background-repeat: no-repeat;
+}
+
+.intro {
+	width: 570px;
+
+	header {
+		background:url(r3_zc_title.gif) no-repeat;
+		height:190px;
+
+		h1,
+		h2 {
+			display:none;
+		}
+	}
+
+	.summary {
+		p {
+			&:first-child {
+				@extend %kellum-method;
+				width: 380px;
+				height: 178px;
+				background:url(r3_zc_summary.gif) no-repeat top left;
+			}
+
+			&:last-child {
+				position: absolute;
+				top: 190px;
+				left: 380px;
+				background:url(r3_zc_download.gif) no-repeat top left;
+				width: 190px;
+				height: 178px;
+				padding-top: 100px;
+				padding-left: 9px;
+				color:#E6B788;
+
+				a {
+					color:#E6B788;
+
+					&:hover {
+						color:#F4D3B3;
+					}
+				}
+			}
+		}
+	}
+
+	.preamble {
+		padding-bottom: 20px;
+		background-image: linear-gradient(to bottom, #607f8b 45px, #4a6774);
+
+		h3 {
+			@include bg-image('r3_zc_road_title.gif', 45px);
+		}
+
+		p {
+			margin:12px;
+			color:#CFD9DC;
+		}
+	}
+}
+
+.supporting {
+	width:570px;
+
+	& > div {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background-image: linear-gradient(to bottom, #ebe1bc, #decd95);
+	}
+
+	p {
+		padding-left: 190px;
+		padding-right: 10px;
+		padding-bottom: 22px;
+		line-height:1.5em;
+		color:#4D3A33;
+
+		&:nth-child(2) {
+			margin-top: -30px;
+		}
+	}
+
+	a {
+		padding:2px;
+		text-decoration:none;
+		color:#C64708;
+
+		&:hover {
+			background:#C6B478;
+			color:#fff;
+		}
+	}
+
+	.explanation {
+		h3 {
+			@include bg-image('r3_zc_what_title.gif', 40px);
+		}
+
+		p:nth-child(2) {
+			margin-top: -40px;
+		}
+	}
+
+	.participation {
+		h3 {
+			@include bg-image ('r3_zc_participation_title.gif', 28px);
+		}
+	}
+
+	.benefits {
+		h3 {
+			@include bg-image('r3_zc_benefits_title.gif', 26px);
+		}
+	}
+
+	.requirements {
+		h3 {
+			@include bg-image('r3_zc_requirements_title.gif', 26px);
+		}
+	}
+}
+
+.supporting footer {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	background:#555;
+	text-align:center;
+	font-size:10px;
+}
+
+.supporting footer a {
+	color:#999;
+
+	&:not(:last-child) {
+		margin-right: 35px;
+	}
+
+	&:hover {
+		background:#777;
+		color:#bbb;
+	}
+}
+
+.sidebar {
+	position:absolute;
+	top:190px;
+	left:570px;
+	padding-left: 10px;
+	width:190px;
+	background-image: linear-gradient(to right, #072835, #0a3443 10px);
+
+	.wrapper div:not(:last-child) {
+		margin-bottom: 20px; 
+	}
+
+	li {
+		list-style-type:none;
+		margin-top: 10px;
+		padding-left: 12px;
+		color:#7FA2B0;
+	}
+
+	a {
+		color:#7FA2B0;
+	}
+
+	a:hover {
+		color:#C64708;
+	}
+
+	.design-selection {
+		h3 {
+			@include bg-image('r3_zc_lselect_title.gif', 22px);
+			background-color: #0a3443;
+			background-position: top 0px left 10px;
+			margin-left: -10px;
+		}
+
+		li {
+			background:url(r3_zc_lselect_bullet.gif) no-repeat top left;
+		}
+
+		a {
+			text-decoration:none;
+		}
+
+		a.design-name {
+			color:#fff;
+			font-weight:bold;
+
+			&:hover {
+				color: #C64708;
+			}
+		}
+	}
+
+	.design-archives {
+		h3 {
+			@include bg-image('r3_zc_larchives_title.gif', 22px);
+		}
+	}
+
+	.zen-resources {
+		h3 {
+			@include bg-image('r3_zc_lresources_title.gif', 22px);
+		}
+	}
+}

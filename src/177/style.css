@@ -1,0 +1,153 @@
+h3, .intro .summary p:first-child {
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #0A3443 url(r3_zc_main_bg.jpg) repeat-y;
+  font-family: verdana, arial, sans-serif;
+  font-size: 11px; }
+  body::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 770px;
+    height: 184px;
+    background: url(r3_zc_clouds.png) no-repeat;
+    z-index: 2; }
+
+h3 {
+  background-repeat: no-repeat; }
+
+.intro {
+  width: 570px; }
+  .intro header {
+    background: url(r3_zc_title.gif) no-repeat;
+    height: 190px; }
+    .intro header h1,
+    .intro header h2 {
+      display: none; }
+  .intro .summary p:first-child {
+    width: 380px;
+    height: 178px;
+    background: url(r3_zc_summary.gif) no-repeat top left; }
+  .intro .summary p:last-child {
+    position: absolute;
+    top: 190px;
+    left: 380px;
+    background: url(r3_zc_download.gif) no-repeat top left;
+    width: 190px;
+    height: 178px;
+    padding-top: 100px;
+    padding-left: 9px;
+    color: #E6B788; }
+    .intro .summary p:last-child a {
+      color: #E6B788; }
+      .intro .summary p:last-child a:hover {
+        color: #F4D3B3; }
+  .intro .preamble {
+    padding-bottom: 20px;
+    background-image: linear-gradient(to bottom, #607f8b 45px, #4a6774); }
+    .intro .preamble h3 {
+      background-image: url("r3_zc_road_title.gif");
+      height: 45px; }
+    .intro .preamble p {
+      margin: 12px;
+      color: #CFD9DC; }
+
+.supporting {
+  width: 570px; }
+  .supporting > div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to bottom, #ebe1bc, #decd95); }
+  .supporting p {
+    padding-left: 190px;
+    padding-right: 10px;
+    padding-bottom: 22px;
+    line-height: 1.5em;
+    color: #4D3A33; }
+    .supporting p:nth-child(2) {
+      margin-top: -30px; }
+  .supporting a {
+    padding: 2px;
+    text-decoration: none;
+    color: #C64708; }
+    .supporting a:hover {
+      background: #C6B478;
+      color: #fff; }
+  .supporting .explanation h3 {
+    background-image: url("r3_zc_what_title.gif");
+    height: 40px; }
+  .supporting .explanation p:nth-child(2) {
+    margin-top: -40px; }
+  .supporting .participation h3 {
+    background-image: url("r3_zc_participation_title.gif");
+    height: 28px; }
+  .supporting .benefits h3 {
+    background-image: url("r3_zc_benefits_title.gif");
+    height: 26px; }
+  .supporting .requirements h3 {
+    background-image: url("r3_zc_requirements_title.gif");
+    height: 26px; }
+
+.supporting footer {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background: #555;
+  text-align: center;
+  font-size: 10px; }
+
+.supporting footer a {
+  color: #999; }
+  .supporting footer a:not(:last-child) {
+    margin-right: 35px; }
+  .supporting footer a:hover {
+    background: #777;
+    color: #bbb; }
+
+.sidebar {
+  position: absolute;
+  top: 190px;
+  left: 570px;
+  padding-left: 10px;
+  width: 190px;
+  background-image: linear-gradient(to right, #072835, #0a3443 10px); }
+  .sidebar .wrapper div:not(:last-child) {
+    margin-bottom: 20px; }
+  .sidebar li {
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 12px;
+    color: #7FA2B0; }
+  .sidebar a {
+    color: #7FA2B0; }
+  .sidebar a:hover {
+    color: #C64708; }
+  .sidebar .design-selection h3 {
+    background-image: url("r3_zc_lselect_title.gif");
+    height: 22px;
+    background-color: #0a3443;
+    background-position: top 0px left 10px;
+    margin-left: -10px; }
+  .sidebar .design-selection li {
+    background: url(r3_zc_lselect_bullet.gif) no-repeat top left; }
+  .sidebar .design-selection a {
+    text-decoration: none; }
+  .sidebar .design-selection a.design-name {
+    color: #fff;
+    font-weight: bold; }
+    .sidebar .design-selection a.design-name:hover {
+      color: #C64708; }
+  .sidebar .design-archives h3 {
+    background-image: url("r3_zc_larchives_title.gif");
+    height: 22px; }
+  .sidebar .zen-resources h3 {
+    background-image: url("r3_zc_lresources_title.gif");
+    height: 22px; }
