@@ -1,0 +1,160 @@
+@mixin bracket($direction, $img) {
+	background: url($img) no-repeat top $direction;
+}
+
+* {
+	box-sizing: border-box;
+	padding:0;
+	margin:0;
+}
+
+body {
+	font: 0.7em/1.2em Times, serif ;
+	background: #000 url(background.png) -30px 0px no-repeat fixed;
+	color: #999;
+	text-transform: lowercase;
+}
+
+p {
+	text-align: justify;
+}
+
+p:nth-child(2) {
+	margin-top: 1em;
+}
+
+p:nth-child(2):first-line {
+	font-weight: bold;
+}
+
+p:last-child {
+	margin-bottom: 1em;
+}
+
+p:not(:nth-child(2)) {
+	text-indent: 1em;
+}
+
+p:hover {
+	color: #aaa;
+	background: transparent;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+a {
+	color: #eee;
+	text-decoration: none;
+}
+
+.page-wrapper {
+	background: #000 url(bottom_corner.png) no-repeat bottom right;
+	width: 300px;
+	margin-left: 470px;
+}
+
+.intro {
+	header {
+		background: url(header.png) no-repeat top left;
+		height: 170px;
+
+		h1,
+		h2 {
+			display: none;
+		}
+	}
+
+	.summary {
+		p:first-child {
+			text-indent: 0;
+			margin-top: 1em;
+			margin-bottom: 2em;
+		}
+	}
+
+	.preamble {
+		@include bracket(left, 'bracket-l1.png');
+		padding-left: 35px;
+		padding-right: 35px;
+	}
+}
+
+.supporting {
+	& > div {
+		padding-left: 35px;
+		padding-right: 35px;
+		background-repeat: no-repeat;
+	}
+
+	.explanation {
+		@include bracket(right, 'bracket-r2.png');
+	}
+
+	.participation {
+		@include bracket(left, 'bracket-l2.png');
+	}
+
+	.benefits {
+		@include bracket(right, 'bracket-r1.png');
+	}
+
+	.requirements {
+		@include bracket(left, 'bracket-l3.png');
+	}
+}
+
+.sidebar {
+	position: absolute;
+	top: 145px;
+	left: 215px;
+	background: url(menu-body.png) repeat-y top 38px left;
+	width: 248px;
+	z-index: 1;
+
+	&::before {
+		content: "";
+		position: absolute;
+		background: url(menu-top.png) no-repeat top left;
+		width: 248px;
+		height: 38px;
+		z-index: -1;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		background: url(menu-bottom.png) no-repeat bottom left;
+		width: 248px;
+		height: 20px;
+	}
+
+	ul {
+		padding-top: 1em;
+		margin-left: 3em;
+	}
+
+	li {
+		margin-bottom: 0.3em;
+		list-style-image: url(dot.png);
+	}
+
+	.wrapper {
+		margin-top: 30px;
+
+		& > div:not(:first-child) {
+			padding-left: 15px;
+		}
+
+		& > div:last-child {
+			padding-bottom: 1em;
+		}
+
+		.design-selection {
+			background: url(flower.png) no-repeat top left;
+			margin-left: -65px;
+			padding-left: 65px + 15px;
+		}
+	}
+}
