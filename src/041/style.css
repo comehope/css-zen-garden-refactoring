@@ -57,8 +57,7 @@ a {
 
 .supporting > div {
   padding-left: 35px;
-  padding-right: 35px;
-  background-repeat: no-repeat; }
+  padding-right: 35px; }
 .supporting .explanation {
   background: url("bracket-r2.png") no-repeat top right; }
 .supporting .participation {
@@ -89,11 +88,11 @@ a {
     width: 248px;
     height: 20px; }
   .sidebar ul {
-    list-style-image: url(dot.png);
     padding-top: 1em;
     margin-left: 3em; }
   .sidebar li {
-    margin-bottom: 0.3em; }
+    margin-bottom: 0.3em;
+    list-style-image: url(dot.png); }
   .sidebar .wrapper {
     margin-top: 30px; }
     .sidebar .wrapper > div:not(:first-child) {

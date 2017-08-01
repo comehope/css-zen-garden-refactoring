@@ -85,7 +85,6 @@ a {
 	& > div {
 		padding-left: 35px;
 		padding-right: 35px;
-		background-repeat: no-repeat;
 	}
 
 	.explanation {
@@ -154,7 +153,7 @@ a {
 		.design-selection {
 			background: url(flower.png) no-repeat top left;
 			margin-left: -65px;
-			padding-left: 65px + 15px;
+			padding-left: 15px + 65px;
 		}
 	}
 }
