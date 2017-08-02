@@ -9,6 +9,7 @@
 * [037 Pret-a-porter](notes/037.md)
 * [041 door to my garden](notes/041.md)
 * [050 First Summary](notes/050.md)
+* [054 Gecko's Eye](notes/054.md)
 * [058 Radio Zen](notes/058.md)
 * [068 Ballade](notes/068.md)
 * [069 Bonsai Sky](notes/069.md)
