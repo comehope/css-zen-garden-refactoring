@@ -25,4 +25,5 @@
 * [193 Leggo My Ego](notes/193.md)
 * [198 The Original](notes/198.md)
 * [202 Retro Theater](notes/202.md)
+* [213 Under the Seal](notes/213.md)
 * [217 Screen Filler](notes/217.md)

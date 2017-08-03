@@ -1,0 +1,213 @@
+.intro .preamble h3, .supporting h3, .intro header h1, .intro header h2, .sidebar h3 {
+  text-indent: -999px;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.intro .summary, .intro .preamble, .supporting > div {
+  background-image: url(back.png);
+  padding-bottom: 20px;
+  padding-left: 60px;
+  padding-right: 60px; }
+
+.intro .preamble h3, .supporting h3 {
+  margin-top: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 45px; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 0.9em;
+  background: #F0ECD6 url(water.png) repeat-x top; }
+  body::after {
+    content: "";
+    position: fixed;
+    bottom: 0px;
+    background: url(bottom.png) no-repeat center;
+    height: 200px;
+    width: 100%;
+    z-index: 3; }
+
+a:link {
+  color: #993300;
+  text-decoration: none; }
+
+a:visited {
+  color: #999900; }
+
+a:hover, a:active {
+  color: #993300;
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+  border-bottom-color: #993300; }
+
+.page-wrapper {
+  position: relative;
+  width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  background: url(squid-blowfish.png) no-repeat top right; }
+  .page-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 1200px;
+    height: 800px;
+    width: 700px;
+    background: url(critters.png) no-repeat;
+    z-index: -1; }
+
+.intro {
+  width: 385px; }
+  .intro header h1 {
+    position: relative;
+    background: url(title.png) no-repeat;
+    height: 195px;
+    width: 290px;
+    margin-top: 0px;
+    z-index: 2; }
+  .intro header h2 {
+    position: absolute;
+    top: 250px;
+    left: 8px;
+    background: url(beauty.png) no-repeat;
+    height: 234px;
+    width: 33px;
+    z-index: 2; }
+  .intro .summary {
+    position: relative;
+    background: url(top.png) no-repeat;
+    margin-top: -72px; }
+    .intro .summary p {
+      font-size: 0.7em;
+      font-style: italic;
+      line-height: 120%;
+      text-align: center; }
+      .intro .summary p:first-child {
+        padding-top: 60px; }
+      .intro .summary p:last-child {
+        font-style: normal;
+        font-variant: small-caps;
+        font-size: .8em; }
+  .intro .preamble h3 {
+    background-image: url(enlightenment.png); }
+  .intro .preamble p {
+    font-size: 0.8em;
+    line-height: 140%; }
+
+.supporting {
+  margin-top: 0px;
+  width: 385px;
+  padding-bottom: 600px;
+  margin-bottom: 50px; }
+  .supporting::after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    background: url(end.png) no-repeat;
+    width: 385px;
+    height: 600px; }
+  .supporting p {
+    font-size: 0.8em;
+    line-height: 140%; }
+  .supporting .explanation h3 {
+    background-image: url(about.png); }
+  .supporting .participation h3 {
+    background-image: url(participation.png); }
+  .supporting .benefits h3 {
+    background-image: url(benefits.png); }
+  .supporting .requirements h3 {
+    background-image: url(requirements.png); }
+  .supporting .requirements p:last-child {
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    background: url(huzzah.png) no-repeat top center;
+    padding-top: 45px;
+    text-align: center;
+    font-style: italic; }
+    .supporting .requirements p:last-child a {
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      text-transform: uppercase; }
+      .supporting .requirements p:last-child a:hover {
+        color: #333333;
+        text-decoration: underline;
+        border-top-style: none;
+        border-right-style: none;
+        border-bottom-style: none;
+        border-left-style: none; }
+  .supporting footer {
+    position: absolute;
+    bottom: 700px;
+    left: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    background: url(footer.png) no-repeat;
+    height: 57px;
+    width: 252px;
+    text-align: center;
+    padding-top: 15px; }
+
+.sidebar {
+  position: absolute;
+  top: 300px;
+  left: 375px;
+  width: 225px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 0.8em; }
+  .sidebar::before {
+    content: "";
+    position: absolute;
+    background: url(menu-top.png) no-repeat;
+    width: 225px;
+    height: 104px; }
+  .sidebar::after {
+    content: "";
+    position: absolute;
+    background: url(menu-end.png) no-repeat;
+    width: 225px;
+    height: 352px; }
+  .sidebar ul {
+    margin-left: 45px;
+    padding-left: 0px; }
+  .sidebar li {
+    margin-bottom: 10px;
+    line-height: 130%;
+    list-style-image: url(bullet.png); }
+  .sidebar h3 {
+    background-repeat: no-repeat;
+    height: 15px;
+    margin-top: 0px; }
+  .sidebar .wrapper {
+    margin-top: 104px; }
+    .sidebar .wrapper > div {
+      padding-bottom: 20px;
+      background-image: url(menu-back.png); }
+  .sidebar .design-selection li {
+    font-style: italic; }
+  .sidebar .design-selection h3 {
+    background-image: url(select.png); }
+  .sidebar .design-selection a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold; }
+    .sidebar .design-selection a:hover {
+      color: #333333;
+      border-bottom-style: none;
+      text-decoration: underline; }
+    .sidebar .design-selection a.design-name {
+      display: block; }
+    .sidebar .design-selection a.designer-name {
+      font-style: italic;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: normal; }
+  .sidebar .design-archives h3 {
+    background-image: url(archives.png); }
+  .sidebar .zen-resources h3 {
+    background-image: url(resources.png); }
