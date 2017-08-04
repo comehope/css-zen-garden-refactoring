@@ -1,0 +1,212 @@
+.kellum-method() {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.main-text(@div-bg, @title-bg) {
+	margin-top: 20px;
+	padding-top: 40px;
+	background: url(@div-bg) no-repeat;
+
+	h3 {
+		background: url(@title-bg) no-repeat;
+		height: 18px;
+	}
+}
+
+body { 
+	font-family: Arial, Helvetica, sans-serif;
+	background: #122981 url(gradient_bg.jpg) repeat-x;
+	margin: 0px;
+
+	&::before { 
+		content: "";
+		position: absolute;
+		top: 0;
+		width: 100%; 
+		height: 1084px;
+		background-image: url(fish_top.gif), url(sunlight.jpg), url(clouds.jpg), url(water_edge.jpg), url(fish01.jpg);
+		background-repeat: no-repeat, no-repeat, repeat-x, repeat-x, no-repeat;
+		background-position: top 220px left 20px, top left, top left, top 104px left, top 960px right 4%; 
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 100%; 
+		height: 476px; 
+		background-image: url(fish_bottom.gif), url(seafloor.jpg), url(seafloor_bg.jpg);
+		background-repeat: no-repeat, no-repeat, repeat-x;
+		background-position: top right 13%, bottom left, bottom left;
+	}
+}
+
+h3 {
+	.kellum-method();
+}
+
+p {
+	text-align: justify;
+	color: #fff;
+	font-size: 0.70em;
+	line-height: 1.25em;
+}
+
+a {
+	text-decoration: underline;
+	color: #a5bcff;
+
+	&:hover {
+		text-decoration: none;
+		color: #ff9600;
+	}
+}
+
+.page-wrapper { 
+	position: relative;
+	width: 536px;
+	padding-left: 20px; 
+	padding-right: 20px; 
+    margin: 0 auto; 
+    margin-top: 200px;
+	z-index: 4;
+}
+
+.intro {
+	width: 355px;
+
+	header {
+		h1 {
+			.kellum-method(); 
+			background: url(h1.gif) no-repeat top left;  
+			height: 29px; 
+			margin: 0;
+		}
+
+		h2 {
+			.kellum-method();
+			background: url(h2.gif) no-repeat top right;
+			height: 12px;
+			margin-top: 2px;
+		}
+	}
+
+	.summary {
+		background: url(divider01.jpg) no-repeat;
+		padding-top: 40px;
+
+		p:first-child {
+			font-size: 0.85em;
+			text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+		}
+	}
+
+	.preamble {
+		.main-text('divider02.jpg', 'h3_road.gif');
+	}
+}
+
+.supporting {
+	width: 355px;
+
+	.explanation { 
+		.main-text('divider03.jpg', 'h3_about.gif');
+	}
+
+	.participation {
+		.main-text('divider04.jpg', 'h3_participation.gif');
+	}
+
+	.beneftis {
+		.main-text('divider05.jpg', 'h3_benefits.gif');
+	}
+
+	.requirements {
+		.main-text('divider06.jpg', 'h3_requirements.gif');
+	}
+
+	footer {
+		margin-top: 20px;
+		margin-bottom: 25px;
+
+		a { 
+			margin-right: 6px; 
+			color: #ff9600;
+		}
+	}
+}
+
+.sidebar {
+	position: absolute;
+	top: 101px;
+	left: 410px;
+	width: 141px;
+	padding: 10px;
+	font-size: 0.70em;
+	color: #fff;
+
+	ul {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	li {
+		list-style-type: none;
+		line-height: 16px;
+	}
+
+	h3 {
+		height: 15px;
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
+
+	a { 
+		color: #fff;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.design-selection {
+		h3 {
+			background: url(h3_select.gif) no-repeat;
+		}
+
+		li {
+		    padding: 5px 0px;
+			border-bottom: 1px solid #003d90;
+		}
+
+		a.design-name {
+			font-weight: bold;
+			display: block;
+			text-transform: uppercase;
+		}
+
+		a.designer-name {
+			color: #ff9600;
+			text-transform: capitalize;	
+		}
+	}
+
+	.design-archives,
+	.zen-resources {
+		margin-top: 22px;
+
+		li {
+		    padding-bottom: 2px;
+		}
+	}
+
+	.design-archives h3 {
+		background: url(h3_archives.gif) no-repeat; 
+	}
+
+	.zen-resources h3 {
+		background: url(h3_resources.gif) no-repeat; 
+	}
+}

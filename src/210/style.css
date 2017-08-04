@@ -1,0 +1,194 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #122981 url(gradient_bg.jpg) repeat-x;
+  margin: 0px;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 1084px;
+  background-image: url(fish_top.gif), url(sunlight.jpg), url(clouds.jpg), url(water_edge.jpg), url(fish01.jpg);
+  background-repeat: no-repeat, no-repeat, repeat-x, repeat-x, no-repeat;
+  background-position: top 220px left 20px, top left, top left, top 104px left, top 960px right 4%;
+}
+body::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 476px;
+  background-image: url(fish_bottom.gif), url(seafloor.jpg), url(seafloor_bg.jpg);
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position: top right 13%, bottom left, bottom left;
+}
+h3 {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+p {
+  text-align: justify;
+  color: #fff;
+  font-size: 0.70em;
+  line-height: 1.25em;
+}
+a {
+  text-decoration: underline;
+  color: #a5bcff;
+}
+a:hover {
+  text-decoration: none;
+  color: #ff9600;
+}
+.page-wrapper {
+  position: relative;
+  width: 536px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  margin-top: 200px;
+  z-index: 4;
+}
+.intro {
+  width: 355px;
+}
+.intro header h1 {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url(h1.gif) no-repeat top left;
+  height: 29px;
+  margin: 0;
+}
+.intro header h2 {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url(h2.gif) no-repeat top right;
+  height: 12px;
+  margin-top: 2px;
+}
+.intro .summary {
+  background: url(divider01.jpg) no-repeat;
+  padding-top: 40px;
+}
+.intro .summary p:first-child {
+  font-size: 0.85em;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+.intro .preamble {
+  margin-top: 20px;
+  padding-top: 40px;
+  background: url('divider02.jpg') no-repeat;
+}
+.intro .preamble h3 {
+  background: url('h3_road.gif') no-repeat;
+  height: 18px;
+}
+.supporting {
+  width: 355px;
+}
+.supporting .explanation {
+  margin-top: 20px;
+  padding-top: 40px;
+  background: url('divider03.jpg') no-repeat;
+}
+.supporting .explanation h3 {
+  background: url('h3_about.gif') no-repeat;
+  height: 18px;
+}
+.supporting .participation {
+  margin-top: 20px;
+  padding-top: 40px;
+  background: url('divider04.jpg') no-repeat;
+}
+.supporting .participation h3 {
+  background: url('h3_participation.gif') no-repeat;
+  height: 18px;
+}
+.supporting .beneftis {
+  margin-top: 20px;
+  padding-top: 40px;
+  background: url('divider05.jpg') no-repeat;
+}
+.supporting .beneftis h3 {
+  background: url('h3_benefits.gif') no-repeat;
+  height: 18px;
+}
+.supporting .requirements {
+  margin-top: 20px;
+  padding-top: 40px;
+  background: url('divider06.jpg') no-repeat;
+}
+.supporting .requirements h3 {
+  background: url('h3_requirements.gif') no-repeat;
+  height: 18px;
+}
+.supporting footer {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.supporting footer a {
+  margin-right: 6px;
+  color: #ff9600;
+}
+.sidebar {
+  position: absolute;
+  top: 101px;
+  left: 410px;
+  width: 141px;
+  padding: 10px;
+  font-size: 0.70em;
+  color: #fff;
+}
+.sidebar ul {
+  margin: 0px;
+  padding: 0px;
+}
+.sidebar li {
+  list-style-type: none;
+  line-height: 16px;
+}
+.sidebar h3 {
+  height: 15px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  text-decoration: underline;
+}
+.sidebar .design-selection h3 {
+  background: url(h3_select.gif) no-repeat;
+}
+.sidebar .design-selection li {
+  padding: 5px 0px;
+  border-bottom: 1px solid #003d90;
+}
+.sidebar .design-selection a.design-name {
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+}
+.sidebar .design-selection a.designer-name {
+  color: #ff9600;
+  text-transform: capitalize;
+}
+.sidebar .design-archives,
+.sidebar .zen-resources {
+  margin-top: 22px;
+}
+.sidebar .design-archives li,
+.sidebar .zen-resources li {
+  padding-bottom: 2px;
+}
+.sidebar .design-archives h3 {
+  background: url(h3_archives.gif) no-repeat;
+}
+.sidebar .zen-resources h3 {
+  background: url(h3_resources.gif) no-repeat;
+}
