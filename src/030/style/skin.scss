@@ -1,0 +1,149 @@
+%title {
+	font-size: 1.1em;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+	margin: {
+		top: 2em;
+		bottom: 0.5em;
+	}
+
+	&:first-letter {
+		font-size: 1.3em;
+	}
+}
+
+%main-text {
+	margin: 0;
+	line-height: 1.4em;
+
+	&+p {
+		text-indent: 1.3em;
+	}
+}
+
+a {
+	font-style: italic;
+	text-decoration: none;
+	color: #039;
+
+	&:hover {
+		background: #ffe699;
+	}
+}
+
+body {
+	font: {
+		family: Georgia, "Times New Roman", Times, serif;
+		size: 12px;
+	}
+	color: #390404;
+}
+
+.intro {
+	header {
+		display: none;
+	}
+
+	.summary {
+		p {
+			@extend %main-text;
+			font-size: 1.05em;
+			line-height: 1.8em;
+		}
+	}
+
+	.preamble {
+		h3 {
+			@extend %title;
+		}
+
+		p {
+			@extend %main-text;
+		}
+	}
+}
+
+.supporting {
+	h3 {
+		@extend %title;
+	}
+
+	p {
+		@extend %main-text;
+	}
+
+	.requirements p:last-child {
+		text-align: center;
+		margin: {
+			top: 30px;
+			bottom: 5px;
+		}
+	}
+
+	footer {
+		@include padding-bg("line.jpg", top, 20px);
+		text-align: center;
+
+		a {
+			@include before-after-text("{ ", " }");
+			font-size: 1.25em;
+			color: #390404;
+		}
+	}
+}
+
+.sidebar {
+ 	@include padding-bg("b5.jpg", bottom, 150px);
+	border-right: 1px dotted #930;
+
+	h3 {
+		@include before-after-text("(", ")");
+		text-align: center;
+		font-style: italic;
+		text-transform: lowercase;
+		letter-spacing: 0.1em;
+		margin: {
+			top: 0;
+			bottom: 5px;
+		}
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+	 	@include padding-bg("listline.gif", bottom, 15px);
+	 	list-style-type: none;
+	 	text-align: center;
+	}
+
+	div:not(:first-child) {
+		margin-top: 30px;
+	}
+
+	.design-selection {
+		@include padding-bg("b1.jpg", top, 110px);
+
+		li{
+			font-style: italic;
+		}
+
+		.design-name {
+			display: block;
+			font-style: normal;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			margin-bottom: 2px;
+		}
+	}
+
+	.design-archives { 
+		@include padding-bg("b3.jpg", top, 110px);
+	}
+
+	.zen-resources { 
+		@include padding-bg("b4.jpg", top, 110px);
+	}
+}

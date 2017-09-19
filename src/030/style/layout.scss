@@ -1,0 +1,61 @@
+$page-width: 760px;
+$top-img-height: 182px;
+$bottom-img-height: 85px;
+$padding-top: 20px;
+$padding-bottom: 10px;
+$top-height: $top-img-height + $padding-top;
+$bottom-height: $bottom-img-height + $padding-bottom;
+
+body {
+	@extend %horizontal-center;
+	background: #B61E3D url(mid.jpg) repeat-y center;
+}
+
+.page-wrapper {
+	position: relative;
+	width: $page-width;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		width: $page-width;
+		height: $top-height;
+		background: url(top.jpg) no-repeat top center;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: -1 * $top-height;
+		width: $page-width;
+		height: $bottom-height;
+		background: url(bot.jpg) no-repeat bottom center;
+	}
+}
+
+.intro,
+.supporting {
+	position: relative;
+	top: $top-height;
+	left: 300px;
+	width: 380px;
+}
+
+.supporting {
+	padding-bottom: $bottom-height;
+
+	.requirements p:last-child,
+	footer {
+		position: relative;
+		left: -300px;
+		width: $page-width;
+	}
+}
+
+.sidebar {
+	position: absolute;
+	top: $top-height;
+	left: 90px;
+	width: 195px;
+}
