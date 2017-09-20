@@ -1,0 +1,37 @@
+body {
+	@extend %horizontal-center;
+	background-color: #000;
+	color: #ddd;
+}
+
+.page-wrapper {
+	position: relative;
+	width: 750px;
+	background: url(backdrop.title.jpg) no-repeat;
+}
+
+.intro,
+.supporting {
+	position: relative;
+	top: 225px;
+	left: 218px;
+	width: 492px;
+}
+
+.intro {
+	header {
+		display: none;
+	}
+
+	.summary {
+		float: left;
+		width: 173px;
+	}
+}
+
+.sidebar {
+	position: absolute;
+	top: 435px;
+	left: 50px;
+	width: 150px;
+}

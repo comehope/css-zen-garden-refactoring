@@ -1,0 +1,166 @@
+$font-size-big: 1.2em;
+$font-size-middle: 0.9em;
+$font-size-small: 0.65em;
+
+%title {
+	font: {
+		size: $font-size-big;
+		weight: normal;
+	}
+	color: #fff;
+}
+
+%content {
+	font-size: $font-size-middle;
+	line-height: 1.5em;
+}
+body {
+	margin: 0;
+	font: {
+		family: georgia,palatino,times,serif;
+		size: 16px;
+	}
+}
+
+a {
+	&:link {
+		text-decoration: none;
+		color: #bcf;
+	}
+
+	&:visited {
+		color: #bde;
+	}
+
+	&:hover {
+		text-decoration: underline;
+		color: #fff;
+	}
+}
+
+.intro {
+	padding: 10px;
+	border: 1px dashed #fff;
+
+	.summary {
+		margin-right: 10px;
+
+		p {
+			font: {
+				size: 0.85em;
+				style: italic;
+			}
+			text-align: center;
+			line-height: 2.2em;
+			margin: 0;
+			padding: 4px;
+		}
+	}
+
+	.preamble {
+		h3 {
+			@extend %title;
+			margin: 0;
+		}
+
+		p {
+			@extend %content;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.supporting {
+	%upperline-and-underline {
+		border: {
+			width: 1px 0;
+			style: solid;
+			color: #fff;
+		}
+		padding: {
+			top: 2px;
+			bottom: 2px;
+		}
+	}
+
+	h3 {
+		@extend %title;
+		@extend %upperline-and-underline;
+	}
+
+	p {
+		@extend %content;
+	}
+
+	footer {
+		@extend %upperline-and-underline;
+		margin: {
+			top: 30px;
+			bottom: 30px;
+		}
+		font-size: $font-size-small;
+		text-align: center;
+
+		a {
+			margin: {
+				left: 10px;
+				right: 10px;
+			}
+		}
+	}
+}
+
+.sidebar {
+	ul {
+		margin: 0;
+		padding-left: 10px;
+	}
+
+	li {
+		list-style-type: none;
+		font-size: $font-size-small;
+		margin: {
+			top: 10px;
+			bottom: 10px;
+		}
+	}
+
+	%h3-size {
+		width: 150px;
+		height: 21px;
+		margin: 0;
+	}
+
+	@mixin h3($bg-img) {
+		h3 {
+			@extend %hide-text;
+			@extend %h3-size;
+			background: url($bg-img);
+		}
+	}
+
+	.design-selection {
+		@include h3("linkhead-select.jpg");
+
+		li {
+			list-style-image: url(docbullet.gif);
+			margin-left: 15px;
+		}
+
+		.design-name {
+			display: block;
+			text-transform: lowercase;
+		}
+	}
+
+	.design-archives {
+		@include h3("linkhead-archives.jpg");
+	}
+
+	.zen-resources {
+		@include h3("linkhead-resources.jpg");
+	}
+}

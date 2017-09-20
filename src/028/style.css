@@ -1,6 +1,11 @@
-/* Reuseable */
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
 }
 
 .sidebar .design-selection h3, .sidebar .design-archives h3, .sidebar .zen-resources h3 {
@@ -15,18 +20,6 @@ body {
   align-items: center;
 }
 
-.intro .preamble h3, .supporting h3 {
-  font-size: 1.2em;
-  font-weight: normal;
-  color: #fff;
-}
-
-.intro .preamble p, .supporting p {
-  font-size: 0.9em;
-  line-height: 1.5em;
-}
-
-/* Layout */
 body {
   background-color: #000;
   color: #ddd;
@@ -61,7 +54,17 @@ body {
   width: 150px;
 }
 
-/* Skin */
+.intro .preamble h3, .supporting h3 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #fff;
+}
+
+.intro .preamble p, .supporting p {
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
 body {
   margin: 0;
   font-family: georgia,palatino,times,serif;
