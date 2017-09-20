@@ -39,9 +39,6 @@ body {
   width: 492px;
 }
 
-.intro header {
-  display: none;
-}
 .intro .summary {
   float: left;
   width: 173px;
@@ -86,6 +83,9 @@ a:hover {
 .intro {
   padding: 10px;
   border: 1px dashed #fff;
+}
+.intro header {
+  display: none;
 }
 .intro .summary {
   margin-right: 10px;
