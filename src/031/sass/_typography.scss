@@ -1,0 +1,168 @@
+body {
+	color: #888;
+	font-size: 16px;
+}
+
+a {
+	color: #090;
+	text-decoration: none;
+
+	&:hover {
+		color: #663;
+		text-decoration: underline;
+	}
+}
+
+%title {
+	@extend %hide-text;
+	margin: 0;
+	background-repeat: no-repeat;
+}
+
+.intro {
+	header {
+		display: none;
+	}
+
+	.summary {
+		&>:first-child {
+			font-size: 0.8em;
+			text-align: right;
+		}
+
+		&>:last-child {
+			margin-top: 40px;
+			font-size: 0.93em;
+			text-align: center;
+			@include padding-bg("barrow.gif", bottom, 90px);
+
+			a {
+				white-space: nowrap;
+				text-transform: uppercase;
+				font: {
+					weight: bold;
+					family: Verdana,Arial,Sans-serif;
+				}
+			}
+		}
+	}
+
+	.preamble h3 {
+		@extend %title;
+		height: 70px;
+		background-image: url("road.gif");
+	}
+}
+
+.supporting {
+	h3 {
+		@extend %title;
+		height: 70px;
+	}
+
+	a {
+		font-weight: bold;
+	}
+
+	.explanation h3 {
+		background-image: url("what.gif");
+	}
+
+	.participation h3 {
+		background-image: url("participation.gif");
+	}
+
+	.benefits h3 {
+		background-image: url("benefits.gif");
+	}
+
+	.requirements h3 {
+		background-image: url("requirements.gif");
+	}
+
+	footer {
+		background: #D9D98B;
+		padding: {
+			top: 10px;
+			bottom: 10px;
+		}
+		border: {
+			width: 1px 0 2px 0;
+			style: solid;
+			color: #363;
+		}
+		text-align: center;
+
+		a {
+			font: {
+				size: 0.85em;
+				weight: normal;
+				family: Verdana,Arial,Sans-serif;
+			}
+			margin: {
+				left: 5px;
+				right: 5px;
+			}
+		}
+	}
+}
+
+.sidebar {
+	div {
+		margin-top: 20px;
+
+		&:not(:first-child) {
+			text-transform: lowercase;
+		}
+	}
+
+	h3 {
+		@extend %title;
+		height: 31px;
+	}
+
+	ul {
+		padding-left: 0;
+		font-size: 0.9em;
+	}
+
+	li {
+		list-style-type: none;
+		margin-bottom: 0.5em;
+		line-height: 1em;
+	}
+
+	a {
+		font: {
+			family: Verdana,Arial,Sans-serif;
+			size: 0.9em;
+			weight: bold;
+		}
+	}
+
+	.design-selection {
+		h3 {
+			background-image: url("select.gif");
+		}
+
+		.design-name {
+			display: block;
+		}
+
+		.designer-name {
+			font: {
+				family: Georgia,Serif;
+				weight: normal;
+			}
+			text-transform: lowercase;
+		}
+	}
+
+	.design-archives h3 {
+		background-image: url("archives.gif");
+	}
+
+	.zen-resources h3 {
+		background-image: url("resources.gif");
+	}
+}

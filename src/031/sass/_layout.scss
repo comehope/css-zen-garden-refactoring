@@ -1,0 +1,37 @@
+body {
+	@extend %horizontal-center;
+	background: #fff url("bg_tree.gif") repeat-x left top;
+}
+
+.page-wrapper {
+	position: relative;
+	width: 732px;
+	background: url("nutitle.gif") no-repeat;
+}
+
+.intro, .supporting {
+	position: relative;
+	top: 200px;
+	left: 195px;
+}
+
+.intro {
+	width: 350px;
+
+	.summary {
+		position: absolute;
+		top: 20px;
+		left: 400px;
+		width: 120px;
+	}
+}
+
+.supporting {
+	width: 400px;
+}
+
+.sidebar {
+	position: absolute;
+	top: 200px;
+	width: 190px;
+}
