@@ -8,7 +8,7 @@ body {
   margin: 0;
 }
 
-.sidebar .design-selection h3, .sidebar .design-archives h3, .sidebar .zen-resources h3 {
+.sidebar h3 {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
@@ -133,13 +133,13 @@ a:hover {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.sidebar .design-selection h3, .sidebar .design-archives h3, .sidebar .zen-resources h3 {
+.sidebar h3 {
   width: 150px;
   height: 21px;
   margin: 0;
 }
 .sidebar .design-selection h3 {
-  background: url("linkhead-select.jpg");
+  background-image: url("linkhead-select.jpg");
 }
 .sidebar .design-selection li {
   list-style-image: url(docbullet.gif);
@@ -150,8 +150,8 @@ a:hover {
   text-transform: lowercase;
 }
 .sidebar .design-archives h3 {
-  background: url("linkhead-archives.jpg");
+  background-image: url("linkhead-archives.jpg");
 }
 .sidebar .zen-resources h3 {
-  background: url("linkhead-resources.jpg");
+  background-image: url("linkhead-resources.jpg");
 }

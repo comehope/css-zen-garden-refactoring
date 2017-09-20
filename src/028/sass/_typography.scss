@@ -133,22 +133,17 @@ a {
 		}
 	}
 
-	%h3-size {
+	h3 {
+		@extend %hide-text;
 		width: 150px;
 		height: 21px;
 		margin: 0;
 	}
 
-	@mixin h3($bg-img) {
-		h3 {
-			@extend %hide-text;
-			@extend %h3-size;
-			background: url($bg-img);
-		}
-	}
-
 	.design-selection {
-		@include h3("linkhead-select.jpg");
+		h3 {
+			background-image: url("linkhead-select.jpg");
+		}
 
 		li {
 			list-style-image: url(docbullet.gif);
@@ -161,11 +156,11 @@ a {
 		}
 	}
 
-	.design-archives {
-		@include h3("linkhead-archives.jpg");
+	.design-archives h3 {
+		background-image: url("linkhead-archives.jpg");
 	}
 
-	.zen-resources {
-		@include h3("linkhead-resources.jpg");
+	.zen-resources h3 {
+		background-image: url("linkhead-resources.jpg");
 	}
 }
