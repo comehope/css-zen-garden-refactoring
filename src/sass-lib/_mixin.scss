@@ -1,17 +1,3 @@
-//extend
-%hide-text {
-	text-indent: 110%;
-	white-space: nowrap;
-	overflow: hidden;
-}
-
-%horizontal-center {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-//mixin
 //$position: top | bottom
 @mixin padding-bg($img, $position, $height){
 	padding-#{$position}: $height;
