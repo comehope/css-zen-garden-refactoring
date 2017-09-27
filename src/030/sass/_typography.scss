@@ -16,7 +16,7 @@
 	margin: 0;
 	line-height: 1.4em;
 
-	&+p {
+	&:not(:first-of-type) {
 		text-indent: 1.3em;
 	}
 }
@@ -40,26 +40,21 @@ body {
 }
 
 .intro {
+	h3 {
+		 @extend %title;
+	}
+
+	p {
+		@extend %main-text;
+	}
+
 	header {
 		display: none;
 	}
 
-	.summary {
-		p {
-			@extend %main-text;
-			font-size: 1.05em;
-			line-height: 1.8em;
-		}
-	}
-
-	.preamble {
-		h3 {
-			@extend %title;
-		}
-
-		p {
-			@extend %main-text;
-		}
+	.summary p {
+		font-size: 1.05em;
+		line-height: 1.8em;
 	}
 }
 

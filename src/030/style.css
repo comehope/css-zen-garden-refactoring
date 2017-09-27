@@ -64,22 +64,22 @@ body {
   width: 195px;
 }
 
-.intro .preamble h3, .supporting h3 {
+.intro h3, .supporting h3 {
   font-size: 1.1em;
   text-transform: uppercase;
   letter-spacing: 0.3em;
   margin-top: 2em;
   margin-bottom: 0.5em;
 }
-.intro .preamble h3:first-letter, .supporting h3:first-letter {
+.intro h3:first-letter, .supporting h3:first-letter {
   font-size: 1.3em;
 }
 
-.intro .summary p, .intro .preamble p, .supporting p {
+.intro p, .supporting p {
   margin: 0;
   line-height: 1.4em;
 }
-.intro .summary p + p, .intro .preamble p + p, .supporting p + p {
+.intro p:not(:first-of-type), .supporting p:not(:first-of-type) {
   text-indent: 1.3em;
 }
 
