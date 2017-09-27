@@ -1,0 +1,144 @@
+%main-title {
+	font: {
+		family: courier;
+		size: 1.2em;
+	}
+	margin: 6px {
+		top: 14px;
+	};
+	border-bottom: 1px solid #888;
+}
+
+%main-text {
+	margin: 6px;
+	letter-spacing: 1px;
+	text-align: justify;
+}
+
+body {
+	font: {
+		family: tahoma;
+		size: 11px;
+	}
+}
+
+abbr {
+	cursor: help;
+}
+
+a {
+	text-decoration: none;
+	padding-bottom: 4px;
+	color: #000;
+	background: url(img-line.gif) repeat-x bottom;
+}
+
+.intro {
+	header h2 {
+		font: {
+			family: courier;
+			size: 1em;
+		}
+		letter-spacing: 3px;
+	}
+
+	.summary {
+		margin-left: 6px;
+
+		p {
+			display: inline;
+			margin: 0;
+			color: #666;
+			font: {
+				style: italic;
+				family: courier;
+			}
+			letter-spacing: 0px;
+		}
+
+		a {
+			color: #666;
+		}
+	}
+
+	.preamble {
+		h3 {
+			@extend %main-title;
+		}
+
+		p {
+			@extend %main-text;
+		}
+
+		border-top: 3px double #ddd;
+		margin-top: 10px;
+	}
+}
+
+.supporting {
+	h3 {
+		@extend %main-title;
+	}
+
+	p {
+		@extend %main-text;
+	}
+
+	.participation {
+		border-left: 2px solid #ddd;
+		border-right: 2px solid #ddd;
+	}
+
+	.benefits {
+		@include padding-bg('img-bonsai.gif', bottom, 148px);
+	}
+
+	.requirements p:last-child {
+		margin-top: 20px;
+		text-align: right;
+		border-right: 1.1em solid #ccc;
+	}
+
+	footer {
+		font-size: 0.9em;
+
+		a {
+			background: none;
+			color: #555;
+
+			&:hover {
+				color: #000;
+				background: url(img-diagonal.gif) repeat-x bottom;
+			}
+		}
+	}
+}
+
+.sidebar {
+	font-size: 0.8em;
+
+	h3 {
+		font-family: courier;
+		margin: 6px;
+	}
+
+	ul {
+		margin: 0;
+		border: 1px solid #bbb;
+		padding: 5px;
+		list-style-type: lower-roman;
+	}
+
+	li {
+		margin-left: 25px;
+	}
+
+	a {
+		background: none;
+		color: #555;
+
+		&:hover {
+			color: #000;
+		}
+	}
+}

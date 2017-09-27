@@ -1,0 +1,103 @@
+$top-height: 230px;
+$bottom-height: 70px;
+
+body {
+	@extend %horizontal-center;
+}
+
+.page-wrapper {
+	position: relative;
+	width: 800px;
+	background: #fff url(img-paper.gif) no-repeat center top;
+	color: #000;
+	padding-left: 25px;
+	padding-right: 25px;
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: -1 * $top-height;
+		width: 420px;
+		height: $bottom-height;
+		background: url('img-pen.gif') no-repeat;
+	}
+}
+
+.intro,
+.supporting {
+	position: relative;
+	top: $top-height;
+}
+
+.intro {
+	header {
+		h1 {
+			display: none;
+		}
+
+		h2 {
+			position: absolute;
+			top: -130px;
+			width: 100%;
+			text-align: center;
+		}
+	}
+}
+
+.supporting {
+	margin-bottom: $bottom-height;
+
+	@mixin float-left($width) {
+		float: left;
+		width: $width;
+	}
+
+	.explanation {
+		@include float-left(31%);
+	}
+
+	.participation {
+		@include float-left(46%);
+	}
+
+	.benefits {
+		@include float-left(22%);
+	}
+
+	.requirements {
+		clear: both;
+	}
+
+	footer {
+		position: absolute;
+		top: -275px;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.sidebar {
+	position: absolute;
+	top: 40px;
+	width: 750px;
+
+	.design-selection {
+		position: absolute;
+		left: 5px;
+	}
+
+	%right {
+		position: absolute;
+		right: 0;
+		width: 170px;
+	}
+
+	.design-archives {
+		@extend %right;
+	}
+
+	.zen-resources {
+		@extend %right;
+		top: 70px;
+	}
+}
