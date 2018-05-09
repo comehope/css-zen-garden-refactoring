@@ -28,3 +28,7 @@
 * [210 OceanScape](notes/210.md)
 * [213 Under the Seal](notes/213.md)
 * [217 Screen Filler](notes/217.md)
+
+### License
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/).
